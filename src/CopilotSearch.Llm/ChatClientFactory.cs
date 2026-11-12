@@ -38,6 +38,8 @@ public sealed class ChatClientFactory(IOptions<LlmOptions> options) : IChatClien
             return CreateAzureOpenAI();
         if (provider.Equals(LlmProviders.Claude, StringComparison.OrdinalIgnoreCase))
             return CreateClaude();
+        if (provider.Equals(LlmProviders.Demo, StringComparison.OrdinalIgnoreCase))
+            return new LlmClient(new DemoChatClient(), LlmProviders.Demo, "demo-heuristic");
         throw new UnknownProviderException(provider);
     }
 

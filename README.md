@@ -8,6 +8,10 @@ Agentic enterprise search over (mock) Microsoft 365 data. See [docs/design.md](d
 
 ## Run
 
+Open the UI at http://localhost:5111 after `dotnet run --project src/CopilotSearch.Api --urls http://localhost:5111`.
+The default `Demo` provider needs no credentials: it runs a keyword `search_all` and summarizes the hits. Pick
+AzureOpenAI or Claude in the UI's Model dropdown once configured (it is disabled until then).
+
 ```powershell
 dotnet test
 

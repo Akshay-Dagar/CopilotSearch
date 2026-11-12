@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Copilot Search (POC)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">Copilot Search <span class="badge">POC</span></div>
+    <label class="provider">Model
+      <select id="provider"></select>
+    </label>
+  </header>
+
+  <main>
+    <form id="form" autocomplete="off">
+      <input id="query" type="search" placeholder="Search your mail, Teams, files and Copilot chats…" autofocus />
+      <button id="go" type="submit">Search</button>
+    </form>
+
+    <div id="examples" class="examples">
+      <span>Try:</span>
+      <button type="button">What did Priya Sharma send about the Q3 budget?</button>
+      <button type="button">Summarize the auth outage postmortem action items</button>
+      <button type="button">Teams discussion about the Atlas launch</button>
+      <button type="button">What did I ask Copilot about Atlas?</button>
+    </div>
+
+    <div id="error" class="error" hidden></div>
+
+    <section id="progress" class="panel" hidden>
+      <h2>Agent activity <span id="status" class="status"></span></h2>
+      <ul id="steps"></ul>
+    </section>
+
+    <section id="answerPanel" class="panel" hidden>
+      <h2>Answer <span id="meta" class="meta"></span></h2>
+      <div id="answer" class="answer"></div>
+      <div id="citations" class="citations"></div>
+    </section>
+
+    <section id="resultsPanel" class="panel" hidden>
+      <h2>Results</h2>
+      <div id="tabs" class="tabs"></div>
+      <ul id="results" class="results"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

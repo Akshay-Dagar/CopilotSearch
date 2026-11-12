@@ -4,6 +4,8 @@ public static class LlmProviders
 {
     public const string AzureOpenAI = "AzureOpenAI";
     public const string Claude = "Claude";
+    /// <summary>Keyless heuristic client for demos and UI development.</summary>
+    public const string Demo = "Demo";
 }
 
 public static class LlmAuthModes

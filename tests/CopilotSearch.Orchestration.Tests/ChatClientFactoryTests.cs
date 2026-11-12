@@ -80,6 +80,10 @@ public class ChatClientFactoryTests
     }
 
     [Fact]
+    public void DemoProvider_NeedsNoCredentials() =>
+        Assert.Equal(LlmProviders.Demo, Create().Create("demo").Provider);
+
+    [Fact]
     public void UnknownProvider_Throws() =>
         Assert.Throws<UnknownProviderException>(() => Create().Create("gemini"));
 }

@@ -15,6 +15,9 @@ builder.Services
 
 var app = builder.Build();
 
+app.UseDefaultFiles();
+app.UseStaticFiles();
+
 app.MapGet("/health", () => Results.Ok(new { status = "ok" }));
 
 // Active configuration without secrets, to see which provider/tools a deployment runs with.
@@ -26,6 +29,12 @@ app.MapGet("/config", (
     return Results.Json(new
     {
         provider = o.Provider,
+        providers = new[]
+        {
+            new { name = LlmProviders.Demo, configured = true },
+            new { name = LlmProviders.AzureOpenAI, configured = !string.IsNullOrWhiteSpace(o.AzureOpenAI.Endpoint) },
+            new { name = LlmProviders.Claude, configured = !string.IsNullOrWhiteSpace(o.Claude.ResourceName) },
+        },
         models = new { azure_openai = o.AzureOpenAI.Deployment, claude = o.Claude.Model },
         max_iterations = o.MaxIterations,
         budget_seconds = orchestration.Value.BudgetSeconds,
