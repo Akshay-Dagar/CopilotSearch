@@ -9,13 +9,14 @@ namespace CopilotSearch.Tools;
 public sealed class CopilotChatTools(
     ICopilotChatConnector chats,
     IOptions<ToolOptions> options,
-    ILogger<CopilotChatTools> logger) : ToolBase(options, logger)
+    IUserContext userContext,
+    ILogger<CopilotChatTools> logger) : ToolBase(options, userContext, logger)
 {
     [Description("Searches the user's own past Microsoft 365 Copilot conversations (prompts and responses). Use it for 'what did I ask Copilot about...' questions. Slower than the other search tools.")]
     public Task<object> SearchCopilotChats(
         [Description("Keywords to match in the prompt or response text.")] string? query = null,
-        [Description("Only interactions at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z.")] string? start = null,
-        [Description("Only interactions at or before this ISO-8601 UTC date-time.")] string? end = null,
+        [Description("Only interactions at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z. A date-only value (2026-11-05) means the start of that day in the user's time zone.")] string? start = null,
+        [Description("Only interactions at or before this ISO-8601 UTC date-time. A date-only value (2026-11-05) is inclusive: it means the end of that day in the user's time zone.")] string? end = null,
         [Description("Copilot app: 'bizchat', 'teams', 'word', 'excel', 'powerpoint', 'outlook' or 'any'. Default 'any'.")] string? app = null,
         [Description("Maximum results. Default 10, maximum 25.")] int? top = null,
         CancellationToken cancellationToken = default) =>

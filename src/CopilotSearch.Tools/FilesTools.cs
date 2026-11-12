@@ -10,7 +10,8 @@ namespace CopilotSearch.Tools;
 public sealed partial class FilesTools(
     IFilesConnector files,
     IOptions<ToolOptions> options,
-    ILogger<FilesTools> logger) : ToolBase(options, logger)
+    IUserContext userContext,
+    ILogger<FilesTools> logger) : ToolBase(options, userContext, logger)
 {
     private const int DefaultFileChars = 8000;
     private const string FilesPrefix = Sources.Files + ":";
@@ -26,8 +27,8 @@ public sealed partial class FilesTools(
         [Description("SharePoint site name.")] string? site = null,
         [Description("Author (creator) name or email. Resolve the person via resolve_person first.")] string? author = null,
         [Description("Name or email of the person who last modified the file.")] string? modified_by = null,
-        [Description("Only files last modified at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z.")] string? start = null,
-        [Description("Only files last modified at or before this ISO-8601 UTC date-time.")] string? end = null,
+        [Description("Only files last modified at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z. A date-only value (2026-11-05) means the start of that day in the user's time zone.")] string? start = null,
+        [Description("Only files last modified at or before this ISO-8601 UTC date-time. A date-only value (2026-11-05) is inclusive: it means the end of that day in the user's time zone.")] string? end = null,
         [Description("Maximum results. Default 10, maximum 25.")] int? top = null,
         CancellationToken cancellationToken = default) =>
         RunAsync(ToolNames.SearchFiles, cancellationToken, async ct =>

@@ -447,6 +447,19 @@ Models: OpenAI-on-Azure deployment `gpt-6-luna`; Claude `claude-sonnet-5.5`. End
 
 ---
 
+## 16. As built: deviations from this doc
+
+- Claude on Foundry is configured with `Llm:Claude:ResourceName` (not an endpoint URL) and uses `Anthropic.Foundry` + `AsIChatClient`; no custom wrapper was needed.
+- Per-tool timeouts bind from `Tools:TimeoutSeconds:<tool>`.
+- `search_all` applies `top` per source; `sources` accepts `calendar` (canonical) and `events`. Date-only inputs mean start/end of day in the user's timezone.
+- Argument binding errors become `invalid_argument` envelopes (`ArgumentSafeFunction`), for both the agent and MCP.
+- Orchestration records every result in a per-run registry; final answers rewrite `[mail:id]` markers to `[n]` and drop unknown ids. Streamed `answer_delta` text still carries raw ids.
+- When the iteration cap is hit with no answer, a tool-less fallback call answers from collected results.
+- `GET /items/{id}` is not implemented (deferred to P1). Package pin: `Microsoft.Extensions.*` (non-AI) stay on 10.0.x.
+- MCP server (`CopilotSearch.Mcp`) exposes the tool catalog over stdio and Streamable HTTP; verified end to end by a subagent acting as an MCP client.
+
+---
+
 ## 14. Suggested POC milestones
 
 1. Solution skeleton, DI, config, health endpoint.

@@ -11,7 +11,7 @@ public sealed class IdentityTools(
     IUserContext userContext,
     TimeProvider clock,
     IOptions<ToolOptions> options,
-    ILogger<IdentityTools> logger) : ToolBase(options, logger)
+    ILogger<IdentityTools> logger) : ToolBase(options, userContext, logger)
 {
     private const int DefaultPeople = 5;
     private const int MaxPeople = 10;

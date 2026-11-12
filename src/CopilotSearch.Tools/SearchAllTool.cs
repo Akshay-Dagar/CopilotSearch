@@ -9,23 +9,26 @@ namespace CopilotSearch.Tools;
 public sealed class SearchAllTool(
     ISearchConnector search,
     IOptions<ToolOptions> options,
-    ILogger<SearchAllTool> logger) : ToolBase(options, logger)
+    IUserContext userContext,
+    ILogger<SearchAllTool> logger) : ToolBase(options, userContext, logger)
 {
     private static readonly Dictionary<string, string> EntityBySource = new()
     {
         ["mail"] = SearchEntityTypes.Message,
         ["files"] = SearchEntityTypes.DriveItem,
         ["teams"] = SearchEntityTypes.ChatMessage,
-        ["events"] = SearchEntityTypes.Event,
+        ["calendar"] = SearchEntityTypes.Event,
     };
+
+    private const string EventsAlias = "events";
 
     [Description("Cross-source first-pass search over email, files, Teams messages and calendar events. Returns shallow results (snippets only) merged and sorted by relevance score. Does NOT cover Copilot chats (use search_copilot_chats). Follow up with search_emails, search_teams_messages, search_files, get_email or get_file_content for detail.")]
     public Task<object> SearchAll(
         [Description("Keywords or KQL-friendly search text. Required.")] string query,
-        [Description("Subset of sources to search: 'mail', 'files', 'teams', 'events'. Defaults to all four.")] string[]? sources = null,
-        [Description("Only items modified/received at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z.")] string? start = null,
-        [Description("Only items modified/received at or before this ISO-8601 UTC date-time.")] string? end = null,
-        [Description("Maximum results per source. Default 10, maximum 25.")] int? top = null,
+        [Description("Subset of sources to search: 'mail', 'files', 'teams', 'calendar' ('events' is accepted as an alias). Defaults to all four.")] string[]? sources = null,
+        [Description("Only items modified/received at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z. A date-only value (2026-11-05) means the start of that day in the user's time zone.")] string? start = null,
+        [Description("Only items modified/received at or before this ISO-8601 UTC date-time. A date-only value (2026-11-05) is inclusive: it means the end of that day in the user's time zone.")] string? end = null,
+        [Description("Maximum results PER SOURCE (so up to top x number of sources are returned, merged and sorted by score). Default 10, maximum 25.")] int? top = null,
         CancellationToken cancellationToken = default) =>
         RunAsync(ToolNames.SearchAll, cancellationToken, async ct =>
         {
@@ -34,6 +37,7 @@ public sealed class SearchAllTool(
 
             var requested = (sources is { Length: > 0 } ? sources : EntityBySource.Keys.ToArray())
                 .Select(s => s?.Trim().ToLowerInvariant() ?? "")
+                .Select(s => s == EventsAlias ? "calendar" : s)
                 .Distinct()
                 .ToList();
             var unknown = requested.Where(s => !EntityBySource.ContainsKey(s)).ToList();
@@ -44,24 +48,28 @@ public sealed class SearchAllTool(
             var perSource = ClampTop(top);
             var entityTypes = requested.Select(s => EntityBySource[s]).ToList();
 
-            var response = await search.SearchAsync(new SearchRequest(query.Trim(), entityTypes, range, perSource), ct);
+            // One request per entity type so that `top` caps each source rather than the whole response.
+            var responses = await Task.WhenAll(entityTypes.Select(e =>
+                search.SearchAsync(new SearchRequest(query.Trim(), [e], range, perSource), ct)));
 
             var mapper = new ResultMapper(Options.MaxSnippetChars);
-            var items = response.Hits
-                .Where(h => entityTypes.Contains(h.EntityType))
-                .GroupBy(h => h.EntityType)
-                .SelectMany(g => g.OrderByDescending(h => h.Rank).Take(perSource))
+            var items = responses
+                .SelectMany((r, i) => r.Hits
+                    .Where(h => h.EntityType == entityTypes[i])
+                    .OrderByDescending(h => h.Rank)
+                    .Take(perSource))
                 .Select(h => Map(mapper, h))
                 .OfType<ResultItem>()
                 .OrderByDescending(r => r.Score)
                 .ToList();
+            var total = responses.Sum(r => r.Total);
 
             return new SearchEnvelope
             {
                 Results = items,
                 Returned = items.Count,
-                TotalEstimate = Math.Max(response.Total, items.Count),
-                Truncated = response.Total > items.Count,
+                TotalEstimate = Math.Max(total, items.Count),
+                Truncated = total > items.Count,
                 QueryUsed = DescribeQuery(("query", query.Trim()), ("sources", string.Join(',', requested)),
                     ("start", range.Start), ("end", range.End)),
             };

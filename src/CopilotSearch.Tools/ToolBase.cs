@@ -15,10 +15,12 @@ internal sealed class ToolNotFoundException(string message) : Exception(message)
 public abstract class ToolBase
 {
     private readonly ILogger _logger;
+    private readonly IUserContext _userContext;
 
-    protected ToolBase(IOptions<ToolOptions> options, ILogger logger)
+    protected ToolBase(IOptions<ToolOptions> options, IUserContext userContext, ILogger logger)
     {
         Options = options.Value;
+        _userContext = userContext;
         _logger = logger;
     }
 
@@ -68,21 +70,39 @@ public abstract class ToolBase
 
     internal const int MaxCharsLimit = 100_000;
 
-    protected static DateTimeOffset? ParseDate(string? value, string parameter)
+    /// <summary>
+    /// Parses an ISO-8601 value. Date-only input is interpreted in the user's time zone: start of day, or
+    /// 23:59:59.999 of that day when <paramref name="endOfDay"/> is set. Full timestamps are taken as-is (UTC if no offset).
+    /// </summary>
+    protected DateTimeOffset? ParseDate(string? value, string parameter, bool endOfDay = false)
     {
         if (string.IsNullOrWhiteSpace(value)) return null;
-        if (DateTimeOffset.TryParse(value, CultureInfo.InvariantCulture,
+        var text = value.Trim();
+        if (DateOnly.TryParseExact(text, "yyyy-MM-dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out var date))
+        {
+            var local = endOfDay
+                ? date.ToDateTime(new TimeOnly(23, 59, 59, 999))
+                : date.ToDateTime(TimeOnly.MinValue);
+            return new DateTimeOffset(local, UserZone().GetUtcOffset(local)).ToUniversalTime();
+        }
+        if (DateTimeOffset.TryParse(text, CultureInfo.InvariantCulture,
                 DateTimeStyles.AssumeUniversal | DateTimeStyles.AllowWhiteSpaces, out var result))
             return result.ToUniversalTime();
-        throw new ToolArgumentException($"'{parameter}' must be an ISO-8601 date/time such as 2026-11-05T00:00:00Z, got '{value}'.");
+        throw new ToolArgumentException($"'{parameter}' must be an ISO-8601 date/time such as 2026-11-05T00:00:00Z or 2026-11-05, got '{value}'.");
     }
 
-    protected static DateRange ParseRange(string? start, string? end)
+    protected DateRange ParseRange(string? start, string? end)
     {
         var s = ParseDate(start, "start");
-        var e = ParseDate(end, "end");
+        var e = ParseDate(end, "end", endOfDay: true);
         if (s > e) throw new ToolArgumentException("'start' must not be later than 'end'.");
         return new DateRange(s, e);
+    }
+
+    private TimeZoneInfo UserZone()
+    {
+        try { return TimeZoneInfo.FindSystemTimeZoneById(_userContext.TimeZone); }
+        catch (Exception ex) when (ex is TimeZoneNotFoundException or InvalidTimeZoneException) { return TimeZoneInfo.Utc; }
     }
 
     /// <summary>Case-insensitive enum check; returns the canonical lowercase value or the default when omitted.</summary>
@@ -97,5 +117,13 @@ public abstract class ToolBase
     protected static string? Blank(string? value) => string.IsNullOrWhiteSpace(value) ? null : value.Trim();
 
     protected static string DescribeQuery(params (string Name, object? Value)[] parts) =>
-        string.Join(' ', parts.Where(p => p.Value is not null).Select(p => $"{p.Name}={p.Value}"));
+        string.Join(' ', parts.Where(p => p.Value is not null).Select(p => $"{p.Name}={FormatValue(p.Value!)}"));
+
+    private static string FormatValue(object value) => value switch
+    {
+        DateTimeOffset d => d.UtcDateTime.ToString("yyyy-MM-dd'T'HH:mm:ss.FFF'Z'", CultureInfo.InvariantCulture),
+        bool b => b ? "true" : "false",
+        IFormattable f => f.ToString(null, CultureInfo.InvariantCulture),
+        _ => value.ToString() ?? "",
+    };
 }

@@ -27,6 +27,7 @@ public sealed class FakeConnectors : IPeopleConnector, ISearchConnector, IMailCo
     public SearchResponse SearchResult { get; set; } = new([], 0);
 
     public SearchRequest? LastSearch { get; private set; }
+    public List<SearchRequest> SearchRequests { get; } = [];
     public MailSearchRequest? LastMail { get; private set; }
     public TeamsSearchRequest? LastTeams { get; private set; }
     public FileSearchRequest? LastFiles { get; private set; }
@@ -53,7 +54,9 @@ public sealed class FakeConnectors : IPeopleConnector, ISearchConnector, IMailCo
     {
         await Gate(ct);
         LastSearch = request;
-        return SearchResult;
+        SearchRequests.Add(request);
+        var hits = SearchResult.Hits.Where(h => request.EntityTypes.Contains(h.EntityType)).OrderByDescending(h => h.Rank).ToList();
+        return new SearchResponse(hits.Take(request.Top).ToList(), hits.Count);
     }
 
     public async Task<SearchPage<MailHit>> SearchAsync(MailSearchRequest request, CancellationToken ct)

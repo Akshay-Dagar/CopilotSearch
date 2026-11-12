@@ -25,8 +25,8 @@ public class SearchAllTests
         Assert.False(env.Truncated);
         Assert.Equal("Matched <c0>budget</c0> text", env.Results[0].Snippet);
         Assert.Equal("event", env.Results[1].Type);
-        Assert.Equal(4, f.LastSearch!.EntityTypes.Count);
-        Assert.Equal(10, f.LastSearch.Top);
+        Assert.Equal(4, f.SearchRequests.Count);
+        Assert.All(f.SearchRequests, r => Assert.Equal(10, r.Top));
     }
 
     [Fact]
@@ -55,7 +55,8 @@ public class SearchAllTests
     {
         var f = new FakeConnectors();
         T.Err(await T.All(f).SearchAll(" "), ToolErrorCodes.InvalidArgument);
-        T.Err(await T.All(f).SearchAll("x", sources: ["copilot"]), ToolErrorCodes.InvalidArgument);
+        var bad = T.Err(await T.All(f).SearchAll("x", sources: ["copilot"]), ToolErrorCodes.InvalidArgument);
+        Assert.Contains("calendar", bad.Error.Message);
         T.Err(await T.All(f).SearchAll("x", start: "nope"), ToolErrorCodes.InvalidArgument);
         await T.All(f).SearchAll("x", top: 99);
         Assert.Equal(25, f.LastSearch!.Top);

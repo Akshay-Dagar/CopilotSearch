@@ -9,7 +9,8 @@ namespace CopilotSearch.Tools;
 public sealed class MailTools(
     IMailConnector mail,
     IOptions<ToolOptions> options,
-    ILogger<MailTools> logger) : ToolBase(options, logger)
+    IUserContext userContext,
+    ILogger<MailTools> logger) : ToolBase(options, userContext, logger)
 {
     private const int DefaultEmailChars = 6000;
     private const string MailPrefix = Sources.Mail + ":";
@@ -20,8 +21,8 @@ public sealed class MailTools(
         [Description("Sender email address. Resolve the person via resolve_person first.")] string? from = null,
         [Description("Recipient (To) email address.")] string? to = null,
         [Description("Cc recipient email address.")] string? cc = null,
-        [Description("Only mail received at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z.")] string? start = null,
-        [Description("Only mail received at or before this ISO-8601 UTC date-time.")] string? end = null,
+        [Description("Only mail received at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z. A date-only value (2026-11-05) means the start of that day in the user's time zone.")] string? start = null,
+        [Description("Only mail received at or before this ISO-8601 UTC date-time. A date-only value (2026-11-05) is inclusive: it means the end of that day in the user's time zone.")] string? end = null,
         [Description("true = only mail with attachments, false = only mail without.")] bool? has_attachments = null,
         [Description("Mail folder: 'inbox', 'sent', 'drafts', 'archive' or 'all'. Default 'all'.")] string? folder = null,
         [Description("Importance filter: 'low', 'normal' or 'high'.")] string? importance = null,

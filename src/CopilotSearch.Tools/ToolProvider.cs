@@ -37,6 +37,6 @@ public sealed class ToolProvider : IToolProvider
     {
         var method = target.GetType().GetMethod(methodName, BindingFlags.Public | BindingFlags.Instance)
             ?? throw new InvalidOperationException($"Tool method {methodName} not found on {target.GetType().Name}.");
-        return AIFunctionFactory.Create(method, target, new AIFunctionFactoryOptions { Name = toolName });
+        return new ArgumentSafeFunction(AIFunctionFactory.Create(method, target, new AIFunctionFactoryOptions { Name = toolName }));
     }
 }

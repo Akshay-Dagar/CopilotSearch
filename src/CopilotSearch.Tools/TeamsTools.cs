@@ -9,7 +9,8 @@ namespace CopilotSearch.Tools;
 public sealed class TeamsTools(
     ITeamsConnector teams,
     IOptions<ToolOptions> options,
-    ILogger<TeamsTools> logger) : ToolBase(options, logger)
+    IUserContext userContext,
+    ILogger<TeamsTools> logger) : ToolBase(options, userContext, logger)
 {
     [Description("Searches Teams chat and channel messages. Returns message snippets with chat/channel metadata; thread expansion is not available. Resolve people via resolve_person first and pass their name or email in from/mentions.")]
     public Task<object> SearchTeamsMessages(
@@ -19,8 +20,8 @@ public sealed class TeamsTools(
         [Description("Where to search: 'chat' (1:1 and group chats), 'channel' (team channels) or 'any'. Default 'any'.")] string? scope = null,
         [Description("Team name. Only used when scope is 'channel' or 'any'.")] string? team = null,
         [Description("Channel name. Only used when scope is 'channel' or 'any'.")] string? channel = null,
-        [Description("Only messages sent at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z.")] string? start = null,
-        [Description("Only messages sent at or before this ISO-8601 UTC date-time.")] string? end = null,
+        [Description("Only messages sent at or after this ISO-8601 UTC date-time, e.g. 2026-11-05T00:00:00Z. A date-only value (2026-11-05) means the start of that day in the user's time zone.")] string? start = null,
+        [Description("Only messages sent at or before this ISO-8601 UTC date-time. A date-only value (2026-11-05) is inclusive: it means the end of that day in the user's time zone.")] string? end = null,
         [Description("Maximum results. Default 10, maximum 25.")] int? top = null,
         CancellationToken cancellationToken = default) =>
         RunAsync(ToolNames.SearchTeamsMessages, cancellationToken, async ct =>
