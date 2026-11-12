@@ -1,7 +1,15 @@
 # Copilot Search Clone: POC Design Doc
 
-Status: Draft for review
-Scope: Backend only, .NET, mock data (no real Graph calls)
+Status: POC backend and demo UI implemented (see section 17); P1 pending
+Scope: .NET, mock data (no real Graph calls)
+
+## TL;DR
+
+An agentic "search over your work data" backend, modeled on Microsoft 365 Copilot Search. A user query goes to a single LLM agent (Microsoft Agent Framework, Azure OpenAI or Claude on Azure Foundry) that calls 10 tools (mail, Teams, files, Copilot chats, people, time, cross-source search) over Graph-shaped connectors, then returns a streamed answer with validated citations plus ranked results.
+
+- **Done (POC):** all 10 tools, mock Contoso fixtures, orchestration with SSE API, an MCP server exposing the tools, a static demo UI, and a keyless Demo provider. 161 unit and integration tests pass; the MCP server was verified by a subagent acting as a client.
+- **Not yet verified:** behavior with a real LLM (prompt quality, tool choice, Claude tool-calling). Needs Azure endpoints and keys.
+- **Pending (P1):** auth (Entra, OBO), real Graph connectors, ADO and other sources, benchmarking-driven timeouts, search-quality work, multi-turn, production ops (section 13).
 
 ---
 
@@ -469,3 +477,31 @@ Models: OpenAI-on-Azure deployment `gpt-6-luna`; Claude `claude-sonnet-5.5`. End
 5. Agent + orchestrator + SSE endpoint.
 6. Prompt tuning with golden queries on both providers.
 7. Resilience tests (timeouts, errors, injection) and README.
+
+---
+
+## 17. Implementation status
+
+### Done
+| Area | Status |
+|---|---|
+| Solution, contracts (frozen Graph-shaped DTOs, connector and tool interfaces) | Done |
+| LLM layer: Azure OpenAI and Claude on Foundry via `IChatClient`; API key or `DefaultAzureCredential`; per-request override; keyless `Demo` provider | Done (live calls untested) |
+| Orchestration: Agent Framework agent, parallel tools, tool tracing, output truncation, iteration cap with fallback answer, time budget, citation validation | Done |
+| API: `POST /search` (SSE and non-stream), `/health`, `/config`, static UI | Done |
+| Tools: all 10 (section 6.2) with validation, clamping, per-tool timeouts, error envelopes, argument-error handling | Done |
+| MCP server: same 10 tools over stdio and Streamable HTTP | Done, verified via subagent client |
+| Connectors: mock implementations over Contoso fixtures (15 people, 41 mails, 66 Teams messages, 26 files, 24 Copilot interactions, 10 events); simulated latency option | Done |
+| Frontend: single-page UI with live agent activity, cited answer, source tabs | Done |
+| Tests: 161 passing (Tools 64, Connectors 58, Orchestration 30, Api 9) | Done |
+
+### Pending (POC leftovers)
+- Run against real Azure OpenAI and Claude; tune the system prompt with about 20 golden queries on both providers (milestone 6 only partly done: fake-client tests only).
+- `GET /items/{id}` endpoint.
+- Streamed `answer_delta` still contains raw citation ids; only the final answer has `[n]` markers.
+- Malformed JSON bodies to `/search` return a 500 instead of a 400.
+- Tool schema enums contain an empty-string value; `page_range` in `get_file_content` is validated but unused.
+- Latency instrumentation and benchmarks (moved to P1).
+
+### Pending (P1)
+Everything in section 13: authentication and OBO, real Graph connectors, non-Graph sources (ADO), search quality, benchmarking-driven timeouts, multi-turn, observability, deployment, and a production frontend.
