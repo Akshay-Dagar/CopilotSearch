@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <ItemGroup>
+    <ProjectReference Include="..\CopilotSearch.Contracts\CopilotSearch.Contracts.csproj" />
+    <ProjectReference Include="..\CopilotSearch.Llm\CopilotSearch.Llm.csproj" />
+    <ProjectReference Include="..\CopilotSearch.Orchestration\CopilotSearch.Orchestration.csproj" />
+    <ProjectReference Include="..\CopilotSearch.Tools\CopilotSearch.Tools.csproj" />
+    <ProjectReference Include="..\CopilotSearch.Connectors\CopilotSearch.Connectors.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+</Project>
