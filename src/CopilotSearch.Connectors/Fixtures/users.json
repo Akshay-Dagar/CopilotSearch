@@ -1,0 +1,156 @@
+[
+  {
+    "id": "u-akshay",
+    "displayName": "Akshay Dagar",
+    "mail": "akshay@contoso.com",
+    "userPrincipalName": "akshay@contoso.com",
+    "jobTitle": "Principal Program Manager",
+    "department": "Engineering",
+    "timeZone": "Asia/Kolkata",
+    "locale": "en-US",
+    "manager": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    }
+  },
+  {
+    "id": "u-priya",
+    "displayName": "Priya Sharma",
+    "mail": "priya.sharma@contoso.com",
+    "userPrincipalName": "priya.sharma@contoso.com",
+    "jobTitle": "Finance Director",
+    "department": "Finance",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-elena",
+    "displayName": "Elena Rossi",
+    "mail": "elena@contoso.com",
+    "userPrincipalName": "elena@contoso.com",
+    "jobTitle": "VP Engineering",
+    "department": "Engineering",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-marcus",
+    "displayName": "Marcus Johnson",
+    "mail": "marcus@contoso.com",
+    "userPrincipalName": "marcus@contoso.com",
+    "jobTitle": "Product Marketing Manager",
+    "department": "Marketing",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-sarah",
+    "displayName": "Sarah Chen",
+    "mail": "sarah.chen@contoso.com",
+    "userPrincipalName": "sarah.chen@contoso.com",
+    "jobTitle": "Senior Site Reliability Engineer",
+    "department": "Engineering",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-priya-nair",
+    "displayName": "Priya Nair",
+    "mail": "priya.nair@contoso.com",
+    "userPrincipalName": "priya.nair@contoso.com",
+    "jobTitle": "Talent Acquisition Partner",
+    "department": "People",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-david",
+    "displayName": "David Okafor",
+    "mail": "david@contoso.com",
+    "userPrincipalName": "david@contoso.com",
+    "jobTitle": "Staff Engineer",
+    "department": "Engineering",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-liam",
+    "displayName": "Liam O'Connor",
+    "mail": "liam@contoso.com",
+    "userPrincipalName": "liam@contoso.com",
+    "jobTitle": "Engineering Manager, Platform",
+    "department": "Engineering",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-fatima",
+    "displayName": "Fatima Al-Hassan",
+    "mail": "fatima@contoso.com",
+    "userPrincipalName": "fatima@contoso.com",
+    "jobTitle": "Design Lead",
+    "department": "Design",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-tom",
+    "displayName": "Tom Becker",
+    "mail": "tom@contoso.com",
+    "userPrincipalName": "tom@contoso.com",
+    "jobTitle": "Corporate Counsel",
+    "department": "Legal",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-nina",
+    "displayName": "Nina Patel",
+    "mail": "nina@contoso.com",
+    "userPrincipalName": "nina@contoso.com",
+    "jobTitle": "HR Business Partner",
+    "department": "People",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-raj",
+    "displayName": "Raj Mehta",
+    "mail": "raj@contoso.com",
+    "userPrincipalName": "raj@contoso.com",
+    "jobTitle": "Senior Data Engineer",
+    "department": "Engineering",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-olivia",
+    "displayName": "Olivia Martin",
+    "mail": "olivia@contoso.com",
+    "userPrincipalName": "olivia@contoso.com",
+    "jobTitle": "Chief Financial Officer",
+    "department": "Finance",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-kenji",
+    "displayName": "Kenji Tanaka",
+    "mail": "kenji@contoso.com",
+    "userPrincipalName": "kenji@contoso.com",
+    "jobTitle": "QA Lead",
+    "department": "Engineering",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  },
+  {
+    "id": "u-grace",
+    "displayName": "Grace Lee",
+    "mail": "grace@contoso.com",
+    "userPrincipalName": "grace@contoso.com",
+    "jobTitle": "Customer Success Manager",
+    "department": "Customer Success",
+    "timeZone": "UTC",
+    "locale": "en-US"
+  }
+]

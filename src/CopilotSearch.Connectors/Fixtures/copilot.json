@@ -1,0 +1,218 @@
+[
+  {
+    "id": "ai-01-p",
+    "sessionId": "ai-conv-01",
+    "appClass": "bizchat",
+    "interactionType": "userPrompt",
+    "body": "Summarize what Elena said about the Atlas launch milestones.",
+    "createdDateTime": "2026-09-28T10:15:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-01"
+  },
+  {
+    "id": "ai-01-r",
+    "sessionId": "ai-conv-01",
+    "appClass": "bizchat",
+    "interactionType": "aiResponse",
+    "body": "Elena outlined the Atlas milestones: private preview by Oct 20, beta readiness review Nov 5, go/no-go on Nov 26 and general availability on Dec 3. Akshay owns the program, David the technical delivery and Marcus go-to-market.",
+    "createdDateTime": "2026-09-28T10:16:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-01"
+  },
+  {
+    "id": "ai-02-p",
+    "sessionId": "ai-conv-02",
+    "appClass": "word",
+    "interactionType": "userPrompt",
+    "body": "Draft an intro paragraph for the Atlas messaging document focused on fast onboarding.",
+    "createdDateTime": "2026-09-30T14:00:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-02"
+  },
+  {
+    "id": "ai-02-r",
+    "sessionId": "ai-conv-02",
+    "appClass": "word",
+    "interactionType": "aiResponse",
+    "body": "Atlas lets teams collaborate on shared data with enterprise-grade governance, and onboards a new tenant in under ten minutes. Built for security-conscious organizations, Atlas keeps data portable with open export from day one.",
+    "createdDateTime": "2026-09-30T14:01:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-02"
+  },
+  {
+    "id": "ai-03-p",
+    "sessionId": "ai-conv-03",
+    "appClass": "excel",
+    "interactionType": "userPrompt",
+    "body": "Which cost categories in this cloud spend sheet are over budget?",
+    "createdDateTime": "2026-10-10T16:20:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-03"
+  },
+  {
+    "id": "ai-03-r",
+    "sessionId": "ai-conv-03",
+    "appClass": "excel",
+    "interactionType": "aiResponse",
+    "body": "Three categories exceed plan: auth service autoscaling (+$96K), test environments (+$41K) and Atlas load testing (+$58K). Overall the Platform run-rate is 12% above plan.",
+    "createdDateTime": "2026-10-10T16:21:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-03"
+  },
+  {
+    "id": "ai-04-p",
+    "sessionId": "ai-conv-04",
+    "appClass": "teams",
+    "interactionType": "userPrompt",
+    "body": "Summarize the incident bridge chat so far.",
+    "createdDateTime": "2026-10-14T06:20:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-04"
+  },
+  {
+    "id": "ai-04-r",
+    "sessionId": "ai-conv-04",
+    "appClass": "teams",
+    "interactionType": "aiResponse",
+    "body": "The auth service has been down since 05:12 UTC. The token signing certificate expired and the rotation job had failed silently. Liam is preparing a manual rotation, Akshay is handling the status page and customer communications, and Sarah Chen is incident commander.",
+    "createdDateTime": "2026-10-14T06:21:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-04"
+  },
+  {
+    "id": "ai-05-p",
+    "sessionId": "ai-conv-05",
+    "appClass": "bizchat",
+    "interactionType": "userPrompt",
+    "body": "Draft a short postmortem outline for the auth outage on Oct 14.",
+    "createdDateTime": "2026-10-18T11:10:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-05"
+  },
+  {
+    "id": "ai-05-r",
+    "sessionId": "ai-conv-05",
+    "appClass": "bizchat",
+    "interactionType": "aiResponse",
+    "body": "Suggested outline: 1) Summary and impact, 2) Root cause (certificate rotation failure, alert routing), 3) Timeline, 4) What went well and poorly, 5) Action items with owners, 6) Customer communication and service credits.",
+    "createdDateTime": "2026-10-18T11:11:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-05"
+  },
+  {
+    "id": "ai-06-p",
+    "sessionId": "ai-conv-06",
+    "appClass": "outlook",
+    "interactionType": "userPrompt",
+    "body": "Reply to Grace about Northwind asking for a root cause summary, keep it careful.",
+    "createdDateTime": "2026-10-24T09:40:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-06"
+  },
+  {
+    "id": "ai-06-r",
+    "sessionId": "ai-conv-06",
+    "appClass": "outlook",
+    "interactionType": "aiResponse",
+    "body": "Hi Grace, thanks for flagging. We can share a short root cause summary once Elena approves the executive summary of the postmortem. I suggest we acknowledge the impact, describe the certificate expiry in plain language and outline the fixes in progress. I will get you the approved text this week.",
+    "createdDateTime": "2026-10-24T09:41:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-06"
+  },
+  {
+    "id": "ai-07-p",
+    "sessionId": "ai-conv-07",
+    "appClass": "powerpoint",
+    "interactionType": "userPrompt",
+    "body": "Create three slides summarizing the Atlas go/no-go criteria.",
+    "createdDateTime": "2026-10-28T15:05:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-07"
+  },
+  {
+    "id": "ai-07-r",
+    "sessionId": "ai-conv-07",
+    "appClass": "powerpoint",
+    "interactionType": "aiResponse",
+    "body": "Slide 1: Go/no-go overview and decision date (Nov 26). Slide 2: Criteria: zero P1 bugs, fewer than 10 P2 bugs, p95 latency under 400 ms, failover drill under 15 minutes, rollback plan. Slide 3: Current status and risks, including the export API fix.",
+    "createdDateTime": "2026-10-28T15:06:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-07"
+  },
+  {
+    "id": "ai-08-p",
+    "sessionId": "ai-conv-08",
+    "appClass": "bizchat",
+    "interactionType": "userPrompt",
+    "body": "What is the status of hiring for the Senior Backend Engineer role?",
+    "createdDateTime": "2026-11-01T12:30:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-08"
+  },
+  {
+    "id": "ai-08-r",
+    "sessionId": "ai-conv-08",
+    "appClass": "bizchat",
+    "interactionType": "aiResponse",
+    "body": "Five candidates were shortlisted by Priya Nair and interviewed on Oct 20 and 21. The offer for candidate C-1042 was approved and extended; the candidate accepted with a December 1 start date. Feedback for C-1047 from you was still pending.",
+    "createdDateTime": "2026-11-01T12:31:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-08"
+  },
+  {
+    "id": "ai-09-p",
+    "sessionId": "ai-conv-09",
+    "appClass": "excel",
+    "interactionType": "userPrompt",
+    "body": "Sum the engineering headcount cost in the Q3 budget plan and compare it to last version.",
+    "createdDateTime": "2026-11-03T10:55:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-09"
+  },
+  {
+    "id": "ai-09-r",
+    "sessionId": "ai-conv-09",
+    "appClass": "excel",
+    "interactionType": "aiResponse",
+    "body": "Engineering headcount cost in draft v2 is $11.6M, which reflects 5 net-new hires instead of 6. The deferred sixth hire reduces the total by about $177K versus the earlier request.",
+    "createdDateTime": "2026-11-03T10:56:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-09"
+  },
+  {
+    "id": "ai-10-p",
+    "sessionId": "ai-conv-10",
+    "appClass": "bizchat",
+    "interactionType": "userPrompt",
+    "body": "What did Priya Sharma say about the Q3 budget recently?",
+    "createdDateTime": "2026-11-07T09:00:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-10"
+  },
+  {
+    "id": "ai-10-r",
+    "sessionId": "ai-conv-10",
+    "appClass": "bizchat",
+    "interactionType": "aiResponse",
+    "body": "Priya Sharma sent draft v2 of the Q3 budget plan on Nov 3 asking you to confirm cloud assumptions by Friday. In chat she confirmed the 5 hires are phased 2, 2 and 1 across the quarter. Olivia Martin followed up asking for final sign-off by Friday.",
+    "createdDateTime": "2026-11-07T09:01:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-10"
+  },
+  {
+    "id": "ai-11-p",
+    "sessionId": "ai-conv-11",
+    "appClass": "teams",
+    "interactionType": "userPrompt",
+    "body": "Catch me up on the Atlas channel from the last week.",
+    "createdDateTime": "2026-11-09T17:20:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-11"
+  },
+  {
+    "id": "ai-11-r",
+    "sessionId": "ai-conv-11",
+    "appClass": "teams",
+    "interactionType": "aiResponse",
+    "body": "David flagged that the export API fix is slipping, so GA on Dec 3 holds only if it lands by Nov 24. Elena asked for comms options. Marcus is holding customer emails until the date is final, and Raj announced the telemetry dashboard in staging.",
+    "createdDateTime": "2026-11-09T17:21:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-11"
+  },
+  {
+    "id": "ai-12-p",
+    "sessionId": "ai-conv-12",
+    "appClass": "word",
+    "interactionType": "userPrompt",
+    "body": "Rewrite this paragraph about the Atlas retrospective to be more concise.",
+    "createdDateTime": "2026-11-11T18:00:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-12"
+  },
+  {
+    "id": "ai-12-r",
+    "sessionId": "ai-conv-12",
+    "appClass": "word",
+    "interactionType": "aiResponse",
+    "body": "Atlas retrospective: the private preview feedback loop and design polish worked well; export API estimates and late SSO discovery did not. Next launch: start load testing earlier and review risks at every milestone.",
+    "createdDateTime": "2026-11-11T18:01:00Z",
+    "webUrl": "https://m365.cloud.contoso.com/chat/ai-conv-12"
+  }
+]

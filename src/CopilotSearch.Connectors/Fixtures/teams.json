@@ -1,0 +1,1036 @@
+[
+  {
+    "id": "tm-001",
+    "from": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "mentions": [],
+    "body": "Kicking off Q3 budget planning. Templates are in the Files tab, submissions due Oct 2.",
+    "createdDateTime": "2026-09-21T09:30:00Z",
+    "replyCount": 2,
+    "teamId": "team-fin",
+    "teamName": "Finance & Ops",
+    "channelId": "ch-budget",
+    "channelName": "budget-planning",
+    "webUrl": "https://teams.contoso.com/l/message/ch-budget/tm-001"
+  },
+  {
+    "id": "tm-002",
+    "from": {
+      "name": "Liam O'Connor",
+      "address": "liam@contoso.com"
+    },
+    "mentions": [],
+    "body": "Does the Q3 template include test environment cost as its own line?",
+    "createdDateTime": "2026-09-21T10:05:00Z",
+    "replyCount": 0,
+    "teamId": "team-fin",
+    "teamName": "Finance & Ops",
+    "channelId": "ch-budget",
+    "channelName": "budget-planning",
+    "webUrl": "https://teams.contoso.com/l/message/ch-budget/tm-002",
+    "replyToId": "tm-001"
+  },
+  {
+    "id": "tm-003",
+    "from": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "mentions": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      }
+    ],
+    "body": "Yes, a separate line under Cloud. @Akshay Dagar please make sure Engineering fills it in.",
+    "createdDateTime": "2026-09-21T10:20:00Z",
+    "replyCount": 0,
+    "teamId": "team-fin",
+    "teamName": "Finance & Ops",
+    "channelId": "ch-budget",
+    "channelName": "budget-planning",
+    "webUrl": "https://teams.contoso.com/l/message/ch-budget/tm-003",
+    "replyToId": "tm-001"
+  },
+  {
+    "id": "tm-004",
+    "from": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "mentions": [],
+    "body": "Akshay, did you see the cloud variance report? Platform is 12% over run-rate.",
+    "createdDateTime": "2026-10-10T11:30:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-priya",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-priya/tm-004"
+  },
+  {
+    "id": "tm-005",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "Yes, going through it with Liam. Mostly autoscaling on the auth service and test envs left running.",
+    "createdDateTime": "2026-10-10T11:41:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-priya",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-priya/tm-005"
+  },
+  {
+    "id": "tm-006",
+    "from": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "mentions": [],
+    "body": "Thanks. Please send me a short explanation before the Q3 budget review on the 23rd.",
+    "createdDateTime": "2026-10-10T11:44:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-priya",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-priya/tm-006"
+  },
+  {
+    "id": "tm-007",
+    "from": {
+      "name": "Olivia Martin",
+      "address": "olivia@contoso.com"
+    },
+    "mentions": [],
+    "body": "Thanks everyone for the Q3 budget review today. Notes are in email. Draft v2 next week please.",
+    "createdDateTime": "2026-10-23T17:15:00Z",
+    "replyCount": 1,
+    "teamId": "team-fin",
+    "teamName": "Finance & Ops",
+    "channelId": "ch-budget",
+    "channelName": "budget-planning",
+    "webUrl": "https://teams.contoso.com/l/message/ch-budget/tm-007"
+  },
+  {
+    "id": "tm-008",
+    "from": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "mentions": [],
+    "body": "On it. I will post draft v2 here once ready.",
+    "createdDateTime": "2026-10-23T17:30:00Z",
+    "replyCount": 0,
+    "teamId": "team-fin",
+    "teamName": "Finance & Ops",
+    "channelId": "ch-budget",
+    "channelName": "budget-planning",
+    "webUrl": "https://teams.contoso.com/l/message/ch-budget/tm-008",
+    "replyToId": "tm-007"
+  },
+  {
+    "id": "tm-009",
+    "from": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "mentions": [],
+    "body": "Draft v2 of the Q3 budget plan is in your inbox. Can you confirm cloud assumptions by Friday?",
+    "createdDateTime": "2026-11-03T10:30:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-priya",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-priya/tm-009"
+  },
+  {
+    "id": "tm-010",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "Will do. One question: are the 5 hires phased across the quarter or all in month one?",
+    "createdDateTime": "2026-11-03T10:50:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-priya",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-priya/tm-010"
+  },
+  {
+    "id": "tm-011",
+    "from": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "mentions": [],
+    "body": "Phased, 2 in month one, 2 in month two, 1 in month three.",
+    "createdDateTime": "2026-11-03T11:02:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-priya",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-priya/tm-011"
+  },
+  {
+    "id": "tm-012",
+    "from": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "mentions": [],
+    "body": "Olivia just sent the final approval request. Friday end of day is a hard deadline for the Q3 budget.",
+    "createdDateTime": "2026-11-10T18:10:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-priya",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-priya/tm-012"
+  },
+  {
+    "id": "tm-013",
+    "from": {
+      "name": "Olivia Martin",
+      "address": "olivia@contoso.com"
+    },
+    "mentions": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      },
+      {
+        "name": "Elena Rossi",
+        "address": "elena@contoso.com"
+      }
+    ],
+    "body": "Reminder: Q3 budget sign-offs due Friday from all department heads. @Akshay Dagar @Elena Rossi",
+    "createdDateTime": "2026-11-11T14:00:00Z",
+    "replyCount": 0,
+    "teamId": "team-fin",
+    "teamName": "Finance & Ops",
+    "channelId": "ch-budget",
+    "channelName": "budget-planning",
+    "webUrl": "https://teams.contoso.com/l/message/ch-budget/tm-013"
+  },
+  {
+    "id": "tm-014",
+    "from": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "mentions": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      }
+    ],
+    "body": "Welcome to the Atlas launch channel. GA target is Dec 3. @Akshay Dagar owns the program.",
+    "createdDateTime": "2026-09-23T08:30:00Z",
+    "replyCount": 1,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-014"
+  },
+  {
+    "id": "tm-015",
+    "from": {
+      "name": "David Okafor",
+      "address": "david@contoso.com"
+    },
+    "mentions": [],
+    "body": "Tech lead here. Architecture overview will be posted this week.",
+    "createdDateTime": "2026-09-23T08:45:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-015",
+    "replyToId": "tm-014"
+  },
+  {
+    "id": "tm-016",
+    "from": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "mentions": [],
+    "body": "First draft of the Atlas messaging is out for review. Key value prop: onboard a tenant in under 10 minutes.",
+    "createdDateTime": "2026-09-30T10:00:00Z",
+    "replyCount": 2,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-016"
+  },
+  {
+    "id": "tm-017",
+    "from": {
+      "name": "Fatima Al-Hassan",
+      "address": "fatima@contoso.com"
+    },
+    "mentions": [],
+    "body": "I will mock the landing page around that onboarding message.",
+    "createdDateTime": "2026-09-30T10:40:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-017",
+    "replyToId": "tm-016"
+  },
+  {
+    "id": "tm-018",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "Love it. Marcus, can you check the claim against the private preview data first?",
+    "createdDateTime": "2026-09-30T11:15:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-018",
+    "replyToId": "tm-016"
+  },
+  {
+    "id": "tm-019",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "War room is open for Atlas beta readiness. David, where are we on the P1 bugs?",
+    "createdDateTime": "2026-10-06T09:10:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-war-room",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-war-room/tm-019",
+    "chatTopic": "Atlas launch war room"
+  },
+  {
+    "id": "tm-020",
+    "from": {
+      "name": "David Okafor",
+      "address": "david@contoso.com"
+    },
+    "mentions": [],
+    "body": "7 open, down from 15. Export API is the scary one.",
+    "createdDateTime": "2026-10-06T09:14:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-war-room",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-war-room/tm-020",
+    "chatTopic": "Atlas launch war room"
+  },
+  {
+    "id": "tm-021",
+    "from": {
+      "name": "Fatima Al-Hassan",
+      "address": "fatima@contoso.com"
+    },
+    "mentions": [],
+    "body": "Design polish for onboarding is done, handing off to engineering today.",
+    "createdDateTime": "2026-10-06T09:20:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-war-room",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-war-room/tm-021",
+    "chatTopic": "Atlas launch war room"
+  },
+  {
+    "id": "tm-022",
+    "from": {
+      "name": "Grace Lee",
+      "address": "grace@contoso.com"
+    },
+    "mentions": [],
+    "body": "Private preview customers love the onboarding flow. Export performance is the main complaint, see Grace's summary in the Files tab.",
+    "createdDateTime": "2026-10-14T15:00:00Z",
+    "replyCount": 1,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-022"
+  },
+  {
+    "id": "tm-023",
+    "from": {
+      "name": "David Okafor",
+      "address": "david@contoso.com"
+    },
+    "mentions": [],
+    "body": "Known. We are working on batching the export job.",
+    "createdDateTime": "2026-10-14T15:20:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-023",
+    "replyToId": "tm-022"
+  },
+  {
+    "id": "tm-024",
+    "from": {
+      "name": "Kenji Tanaka",
+      "address": "kenji@contoso.com"
+    },
+    "mentions": [],
+    "body": "Regression pass finished. 5 new P2 bugs, no new P1s. Details in the tracker.",
+    "createdDateTime": "2026-10-21T11:00:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-qa",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-qa/tm-024",
+    "chatTopic": "Atlas QA"
+  },
+  {
+    "id": "tm-025",
+    "from": {
+      "name": "David Okafor",
+      "address": "david@contoso.com"
+    },
+    "mentions": [],
+    "body": "Good. Can someone retest the tenant onboarding fix on the EU region?",
+    "createdDateTime": "2026-10-21T11:08:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-qa",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-qa/tm-025",
+    "chatTopic": "Atlas QA"
+  },
+  {
+    "id": "tm-026",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "Kenji, please add the export API to the load test plan for the go/no-go.",
+    "createdDateTime": "2026-10-21T11:30:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-qa",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-qa/tm-026",
+    "chatTopic": "Atlas QA"
+  },
+  {
+    "id": "tm-027",
+    "from": {
+      "name": "Kenji Tanaka",
+      "address": "kenji@contoso.com"
+    },
+    "mentions": [],
+    "body": "Proposed go/no-go criteria are posted. Zero P1s, fewer than 10 P2s, p95 latency under 400 ms, failover drill passes.",
+    "createdDateTime": "2026-10-29T10:05:00Z",
+    "replyCount": 1,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-027"
+  },
+  {
+    "id": "tm-028",
+    "from": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "mentions": [],
+    "body": "Looks right. Let's also add a documented rollback plan.",
+    "createdDateTime": "2026-10-29T10:30:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-028",
+    "replyToId": "tm-027"
+  },
+  {
+    "id": "tm-029",
+    "from": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "mentions": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      }
+    ],
+    "body": "Run of show for the Nov 19 launch event is in your inbox. @Akshay Dagar slides by Monday please.",
+    "createdDateTime": "2026-11-04T14:30:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-war-room",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-war-room/tm-029",
+    "chatTopic": "Atlas launch war room"
+  },
+  {
+    "id": "tm-030",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "Will do. Fatima, can you give me the Atlas brand template?",
+    "createdDateTime": "2026-11-04T14:45:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-war-room",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-war-room/tm-030",
+    "chatTopic": "Atlas launch war room"
+  },
+  {
+    "id": "tm-031",
+    "from": {
+      "name": "Fatima Al-Hassan",
+      "address": "fatima@contoso.com"
+    },
+    "mentions": [],
+    "body": "Sending it now.",
+    "createdDateTime": "2026-11-04T14:50:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-war-room",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-war-room/tm-031",
+    "chatTopic": "Atlas launch war room"
+  },
+  {
+    "id": "tm-032",
+    "from": {
+      "name": "David Okafor",
+      "address": "david@contoso.com"
+    },
+    "mentions": [],
+    "body": "Risk flag: the export API fix is slipping. If it lands by Nov 24 we keep Dec 3 GA, otherwise one week later.",
+    "createdDateTime": "2026-11-08T13:00:00Z",
+    "replyCount": 2,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-032"
+  },
+  {
+    "id": "tm-033",
+    "from": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "mentions": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      }
+    ],
+    "body": "Thanks David. We will decide at the go/no-go. @Akshay Dagar please line up the comms options.",
+    "createdDateTime": "2026-11-08T13:25:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-033",
+    "replyToId": "tm-032"
+  },
+  {
+    "id": "tm-034",
+    "from": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "mentions": [],
+    "body": "Holding customer emails until the date is final.",
+    "createdDateTime": "2026-11-08T13:40:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-034",
+    "replyToId": "tm-032"
+  },
+  {
+    "id": "tm-035",
+    "from": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "mentions": [],
+    "body": "Akshay, what is your read on the Atlas GA risk?",
+    "createdDateTime": "2026-11-08T16:00:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-elena",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-elena/tm-035"
+  },
+  {
+    "id": "tm-036",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "I think we keep Dec 3 if export fix lands by Nov 24, otherwise slip one week. I will bring options to go/no-go.",
+    "createdDateTime": "2026-11-08T16:12:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-elena",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-elena/tm-036"
+  },
+  {
+    "id": "tm-037",
+    "from": {
+      "name": "Raj Mehta",
+      "address": "raj@contoso.com"
+    },
+    "mentions": [],
+    "body": "Atlas telemetry dashboard is live in the staging workspace. Feedback welcome.",
+    "createdDateTime": "2026-11-09T09:45:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-atlas",
+    "channelName": "atlas-launch",
+    "webUrl": "https://teams.contoso.com/l/message/ch-atlas/tm-037"
+  },
+  {
+    "id": "tm-038",
+    "from": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "mentions": [],
+    "body": "Customer email timing: heads-up on Nov 17, announcement on GA day. Akshay is drafting.",
+    "createdDateTime": "2026-11-11T16:40:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-war-room",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-war-room/tm-038",
+    "chatTopic": "Atlas launch war room"
+  },
+  {
+    "id": "tm-039",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "Draft sent to you and Grace. If GA slips we hold the announcement.",
+    "createdDateTime": "2026-11-11T16:55:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-atlas-war-room",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-atlas-war-room/tm-039",
+    "chatTopic": "Atlas launch war room"
+  },
+  {
+    "id": "tm-040",
+    "from": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "mentions": [],
+    "body": "SEV1: auth service down, sign-ins failing. Incident commander: me. Bridge is open.",
+    "createdDateTime": "2026-10-14T05:20:00Z",
+    "replyCount": 2,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-incident",
+    "channelName": "incident-response",
+    "webUrl": "https://teams.contoso.com/l/message/ch-incident/tm-040"
+  },
+  {
+    "id": "tm-041",
+    "from": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "mentions": [],
+    "body": "Bridge notes: token signing cert appears expired. Checking rotation job logs.",
+    "createdDateTime": "2026-10-14T05:25:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-outage-bridge",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-outage-bridge/tm-041",
+    "chatTopic": "Outage Oct 14 bridge"
+  },
+  {
+    "id": "tm-042",
+    "from": {
+      "name": "Liam O'Connor",
+      "address": "liam@contoso.com"
+    },
+    "mentions": [],
+    "body": "I can confirm the rotation job failed silently last night. Preparing a manual cert rotation.",
+    "createdDateTime": "2026-10-14T05:31:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-outage-bridge",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-outage-bridge/tm-042",
+    "chatTopic": "Outage Oct 14 bridge"
+  },
+  {
+    "id": "tm-043",
+    "from": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "mentions": [
+      {
+        "name": "Sarah Chen",
+        "address": "sarah.chen@contoso.com"
+      }
+    ],
+    "body": "Please keep customer comms flowing. @Sarah Chen who is writing the status page updates?",
+    "createdDateTime": "2026-10-14T05:40:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-outage-bridge",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-outage-bridge/tm-043",
+    "chatTopic": "Outage Oct 14 bridge"
+  },
+  {
+    "id": "tm-044",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "I will handle the status page and enterprise customer comms.",
+    "createdDateTime": "2026-10-14T06:10:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-outage-bridge",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-outage-bridge/tm-044",
+    "chatTopic": "Outage Oct 14 bridge"
+  },
+  {
+    "id": "tm-045",
+    "from": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "mentions": [],
+    "body": "New cert deployed to the primary region, rolling out to the rest.",
+    "createdDateTime": "2026-10-14T07:30:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-outage-bridge",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-outage-bridge/tm-045",
+    "chatTopic": "Outage Oct 14 bridge"
+  },
+  {
+    "id": "tm-046",
+    "from": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "mentions": [],
+    "body": "Resolved at 08:47 UTC. Total duration about 3h35m. Postmortem to follow.",
+    "createdDateTime": "2026-10-14T08:50:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-incident",
+    "channelName": "incident-response",
+    "webUrl": "https://teams.contoso.com/l/message/ch-incident/tm-046",
+    "replyToId": "tm-040"
+  },
+  {
+    "id": "tm-047",
+    "from": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "mentions": [],
+    "body": "Thanks everyone for the fast response. Great teamwork.",
+    "createdDateTime": "2026-10-14T09:15:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-incident",
+    "channelName": "incident-response",
+    "webUrl": "https://teams.contoso.com/l/message/ch-incident/tm-047",
+    "replyToId": "tm-040"
+  },
+  {
+    "id": "tm-048",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "Postmortem owner is Sarah, action items owner is Liam. Draft due Oct 21.",
+    "createdDateTime": "2026-10-16T11:45:00Z",
+    "replyCount": 2,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-incident",
+    "channelName": "incident-response",
+    "webUrl": "https://teams.contoso.com/l/message/ch-incident/tm-048"
+  },
+  {
+    "id": "tm-049",
+    "from": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "mentions": [],
+    "body": "Draft postmortem is shared. Key finding: expiry alert routed to a retired mailbox.",
+    "createdDateTime": "2026-10-21T14:10:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-incident",
+    "channelName": "incident-response",
+    "webUrl": "https://teams.contoso.com/l/message/ch-incident/tm-049",
+    "replyToId": "tm-048"
+  },
+  {
+    "id": "tm-050",
+    "from": {
+      "name": "Liam O'Connor",
+      "address": "liam@contoso.com"
+    },
+    "mentions": [],
+    "body": "Action item status: 3 done, 4 in progress, 1 not started.",
+    "createdDateTime": "2026-10-27T10:30:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-incident",
+    "channelName": "incident-response",
+    "webUrl": "https://teams.contoso.com/l/message/ch-incident/tm-050",
+    "replyToId": "tm-048"
+  },
+  {
+    "id": "tm-051",
+    "from": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "mentions": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      }
+    ],
+    "body": "Failover drill scheduled for Nov 18 10:00 UTC. @Akshay Dagar please join the debrief.",
+    "createdDateTime": "2026-11-09T08:40:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-incident",
+    "channelName": "incident-response",
+    "webUrl": "https://teams.contoso.com/l/message/ch-incident/tm-051"
+  },
+  {
+    "id": "tm-052",
+    "from": {
+      "name": "Grace Lee",
+      "address": "grace@contoso.com"
+    },
+    "mentions": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      }
+    ],
+    "body": "Northwind is asking for a root cause summary. @Akshay Dagar can we share the postmortem exec summary?",
+    "createdDateTime": "2026-10-24T14:00:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-general",
+    "channelName": "general",
+    "webUrl": "https://teams.contoso.com/l/message/ch-general/tm-052"
+  },
+  {
+    "id": "tm-053",
+    "from": {
+      "name": "Nina Patel",
+      "address": "nina@contoso.com"
+    },
+    "mentions": [],
+    "body": "Six engineering reqs are approved: 3 Senior Backend, 2 SRE, 1 QA.",
+    "createdDateTime": "2026-09-25T10:00:00Z",
+    "replyCount": 1,
+    "teamId": "team-ppl",
+    "teamName": "People Team",
+    "channelId": "ch-hiring",
+    "channelName": "hiring",
+    "webUrl": "https://teams.contoso.com/l/message/ch-hiring/tm-053"
+  },
+  {
+    "id": "tm-054",
+    "from": {
+      "name": "Priya Nair",
+      "address": "priya.nair@contoso.com"
+    },
+    "mentions": [],
+    "body": "Sourcing starts today. I will share shortlists with the hiring managers.",
+    "createdDateTime": "2026-09-25T10:20:00Z",
+    "replyCount": 0,
+    "teamId": "team-ppl",
+    "teamName": "People Team",
+    "channelId": "ch-hiring",
+    "channelName": "hiring",
+    "webUrl": "https://teams.contoso.com/l/message/ch-hiring/tm-054",
+    "replyToId": "tm-053"
+  },
+  {
+    "id": "tm-055",
+    "from": {
+      "name": "Priya Nair",
+      "address": "priya.nair@contoso.com"
+    },
+    "mentions": [],
+    "body": "Akshay, shortlist for the Senior Backend Engineer role is in your inbox. Who is on the panel?",
+    "createdDateTime": "2026-10-02T13:00:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-pnair",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-pnair/tm-055"
+  },
+  {
+    "id": "tm-056",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "David, Liam and me. Please send the scorecard template.",
+    "createdDateTime": "2026-10-02T13:20:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-pnair",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-pnair/tm-056"
+  },
+  {
+    "id": "tm-057",
+    "from": {
+      "name": "Priya Nair",
+      "address": "priya.nair@contoso.com"
+    },
+    "mentions": [],
+    "body": "Interview loops are Oct 20 and 21. Invites are out.",
+    "createdDateTime": "2026-10-17T14:30:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-pnair",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-pnair/tm-057"
+  },
+  {
+    "id": "tm-058",
+    "from": {
+      "name": "Nina Patel",
+      "address": "nina@contoso.com"
+    },
+    "mentions": [],
+    "body": "Akshay, still missing your feedback for C-1042 and C-1047, can you submit today?",
+    "createdDateTime": "2026-10-25T09:30:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-pnair",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-pnair/tm-058"
+  },
+  {
+    "id": "tm-059",
+    "from": {
+      "name": "Priya Nair",
+      "address": "priya.nair@contoso.com"
+    },
+    "mentions": [],
+    "body": "Offer approved for C-1042. I will call them this afternoon.",
+    "createdDateTime": "2026-11-01T11:50:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-pnair",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-pnair/tm-059"
+  },
+  {
+    "id": "tm-060",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "Great news. Please tell them we are excited about Atlas.",
+    "createdDateTime": "2026-11-01T12:05:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-pnair",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-pnair/tm-060"
+  },
+  {
+    "id": "tm-061",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [
+      {
+        "name": "Priya Nair",
+        "address": "priya.nair@contoso.com"
+      }
+    ],
+    "body": "Posted feedback on the SRE job description in email. @Priya Nair please include on-call expectations.",
+    "createdDateTime": "2026-11-07T13:30:00Z",
+    "replyCount": 0,
+    "teamId": "team-ppl",
+    "teamName": "People Team",
+    "channelId": "ch-hiring",
+    "channelName": "hiring",
+    "webUrl": "https://teams.contoso.com/l/message/ch-hiring/tm-061"
+  },
+  {
+    "id": "tm-062",
+    "from": {
+      "name": "Priya Nair",
+      "address": "priya.nair@contoso.com"
+    },
+    "mentions": [],
+    "body": "Candidate C-1042 accepted the offer. Start date Dec 1.",
+    "createdDateTime": "2026-11-09T10:15:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-pnair",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-pnair/tm-062"
+  },
+  {
+    "id": "tm-063",
+    "from": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "mentions": [],
+    "body": "Engineering all-hands is Nov 20. Akshay presents Atlas status, Sarah presents lessons from the auth outage.",
+    "createdDateTime": "2026-10-30T09:00:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-general",
+    "channelName": "general",
+    "webUrl": "https://teams.contoso.com/l/message/ch-general/tm-063"
+  },
+  {
+    "id": "tm-064",
+    "from": {
+      "name": "Liam O'Connor",
+      "address": "liam@contoso.com"
+    },
+    "mentions": [],
+    "body": "Platform team retro tomorrow: certificate management and alert routing improvements.",
+    "createdDateTime": "2026-11-05T11:00:00Z",
+    "replyCount": 0,
+    "teamId": "team-eng",
+    "teamName": "Engineering",
+    "channelId": "ch-general",
+    "channelName": "general",
+    "webUrl": "https://teams.contoso.com/l/message/ch-general/tm-064"
+  },
+  {
+    "id": "tm-065",
+    "from": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "mentions": [],
+    "body": "Akshay, thanks for coordinating the postmortem review. The exec summary needs clearer customer impact.",
+    "createdDateTime": "2026-11-02T16:30:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-elena",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-elena/tm-065"
+  },
+  {
+    "id": "tm-066",
+    "from": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "mentions": [],
+    "body": "Agreed, I will work with Sarah on the wording and add service credit cost.",
+    "createdDateTime": "2026-11-02T16:45:00Z",
+    "replyCount": 0,
+    "chatId": "19:chat-akshay-elena",
+    "webUrl": "https://teams.contoso.com/l/message/19:chat-akshay-elena/tm-066"
+  }
+]

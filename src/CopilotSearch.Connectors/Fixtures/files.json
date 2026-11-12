@@ -1,0 +1,600 @@
+[
+  {
+    "driveId": "b!contoso-finance",
+    "id": "01FILE001",
+    "name": "Q3-Budget-Plan-v2.xlsx",
+    "fileType": "xlsx",
+    "size": 36444,
+    "location": "sharepoint",
+    "siteName": "Finance",
+    "path": "/sites/Finance/Budget Planning/Q3-Budget-Plan-v2.xlsx",
+    "createdBy": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "createdDateTime": "2026-09-21T10:00:00Z",
+    "lastModifiedDateTime": "2026-11-03T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Finance/Budget Planning/Q3-Budget-Plan-v2.xlsx",
+    "summary": "FY27 Q3 Budget Plan, draft v2. Prepared by Priya Sharma, Finance. Engineering total: $11.6M including 5 net-new hires (phased 2/2/1 across the quarter). Cloud spend approved at a 7% increase over Q2 w",
+    "text": "FY27 Q3 Budget Plan, draft v2. Prepared by Priya Sharma, Finance. Engineering total: $11.6M including 5 net-new hires (phased 2/2/1 across the quarter). Cloud spend approved at a 7% increase over Q2 with a monthly checkpoint. Atlas launch marketing is held at $420K.\n\nAssumptions: loaded cost per engineering hire $212K annualized; cloud run-rate $1.84M requested by Engineering, $1.78M approved after review; contingency 3% held centrally by the CFO. Test environments are tracked as a separate line under Cloud.\n\nOpen items: sixth engineering hire deferred to Q4 pending the Q4 reforecast; Platform overage of 12% to be explained by Liam O'Connor; vendor cloud commitment contract under legal review by Tom Becker."
+  },
+  {
+    "driveId": "b!contoso-finance",
+    "id": "01FILE002",
+    "name": "Q3-Cloud-Spend-Variance.xlsx",
+    "fileType": "xlsx",
+    "size": 33744,
+    "location": "sharepoint",
+    "siteName": "Finance",
+    "path": "/sites/Finance/Budget Planning/Q3-Cloud-Spend-Variance.xlsx",
+    "createdBy": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "createdDateTime": "2026-10-09T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-10T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Finance/Budget Planning/Q3-Cloud-Spend-Variance.xlsx",
+    "summary": "Cloud spend variance report for Q3. Platform is running 12% over the planned run-rate. Main drivers: autoscaling of the auth service (about $96K), test environments left running over weekends ($41K), ",
+    "text": "Cloud spend variance report for Q3. Platform is running 12% over the planned run-rate. Main drivers: autoscaling of the auth service (about $96K), test environments left running over weekends ($41K), and Atlas load testing ($58K).\n\nRecommendation: introduce automatic shutdown for non-production environments and reserve capacity for the auth service. Owners: Liam O'Connor (Platform) and Akshay Dagar (Engineering)."
+  },
+  {
+    "driveId": "b!contoso-finance",
+    "id": "01FILE003",
+    "name": "Q3-Budget-Review-Deck.pptx",
+    "fileType": "pptx",
+    "size": 33555,
+    "location": "sharepoint",
+    "siteName": "Finance",
+    "path": "/sites/Finance/Budget Planning/Q3-Budget-Review-Deck.pptx",
+    "createdBy": {
+      "name": "Olivia Martin",
+      "address": "olivia@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "createdDateTime": "2026-10-22T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-23T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Finance/Budget Planning/Q3-Budget-Review-Deck.pptx",
+    "summary": "Q3 Budget Review. Slide 1: Company totals and headcount. Slide 2: Engineering request vs approved. Slide 3: Cloud spend and variance. Slide 4: Atlas launch investment. Slide 5: Decisions and next step",
+    "text": "Q3 Budget Review. Slide 1: Company totals and headcount. Slide 2: Engineering request vs approved. Slide 3: Cloud spend and variance. Slide 4: Atlas launch investment. Slide 5: Decisions and next steps.\n\nDecisions recorded by Olivia Martin: engineering headcount capped at 5 hires in Q3; cloud increase approved at 7%; Atlas launch marketing remains $420K; monthly cloud checkpoint with Finance."
+  },
+  {
+    "driveId": "b!contoso-finance",
+    "id": "01FILE004",
+    "name": "FY27-Planning-Calendar.docx",
+    "fileType": "docx",
+    "size": 31971,
+    "location": "sharepoint",
+    "siteName": "Finance",
+    "path": "/sites/Finance/Budget Planning/FY27-Planning-Calendar.docx",
+    "createdBy": {
+      "name": "Olivia Martin",
+      "address": "olivia@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Olivia Martin",
+      "address": "olivia@contoso.com"
+    },
+    "createdDateTime": "2026-10-03T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-04T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Finance/Budget Planning/FY27-Planning-Calendar.docx",
+    "summary": "FY27 planning calendar. Q3 budget approval is due before the board pack on Nov 20. Departments submit headcount and cloud plans by Oct 2. Draft review with the CFO in mid October. Quarterly reforecast",
+    "text": "FY27 planning calendar. Q3 budget approval is due before the board pack on Nov 20. Departments submit headcount and cloud plans by Oct 2. Draft review with the CFO in mid October. Quarterly reforecast begins in January."
+  },
+  {
+    "driveId": "b!contoso-atlas",
+    "id": "01FILE005",
+    "name": "Atlas-Launch-Plan.docx",
+    "fileType": "docx",
+    "size": 40062,
+    "location": "sharepoint",
+    "siteName": "Atlas Program",
+    "path": "/sites/AtlasProgram/Planning/Atlas-Launch-Plan.docx",
+    "createdBy": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "createdDateTime": "2026-09-23T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-31T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/AtlasProgram/Planning/Atlas-Launch-Plan.docx",
+    "summary": "Project Atlas launch plan. Atlas is Contoso's new multi-tenant data collaboration service. Program owner: Akshay Dagar. Technical lead: David Okafor. Go-to-market: Marcus Johnson. Executive sponsor: E",
+    "text": "Project Atlas launch plan. Atlas is Contoso's new multi-tenant data collaboration service. Program owner: Akshay Dagar. Technical lead: David Okafor. Go-to-market: Marcus Johnson. Executive sponsor: Elena Rossi.\n\nMilestones: private preview complete Oct 20; beta readiness review Nov 5; customer launch event Nov 19; go/no-go meeting Nov 26; general availability Dec 3. The Dec 3 date is at risk if the export API fix does not land by Nov 24.\n\nWorkstreams and owners: messaging and pricing (Marcus Johnson, Priya Sharma), engineering delivery (David Okafor), QA sign-off (Kenji Tanaka), customer communications (Grace Lee), design (Fatima Al-Hassan), telemetry (Raj Mehta).\n\nRisks: export API performance for large tenants; SSO support requested by preview customers; on-call load for the SRE team after the auth outage; dependency on the failover drill scheduled for Nov 18.\n\nRollback plan: if a P1 is found within 72 hours of GA, tenants are moved back to the preview tier with a customer notice template prepared by Grace Lee. Launch communications must be approved by Marcus Johnson and Elena Rossi before sending."
+  },
+  {
+    "driveId": "b!contoso-atlas",
+    "id": "01FILE006",
+    "name": "Atlas-Messaging-Draft.docx",
+    "fileType": "docx",
+    "size": 33375,
+    "location": "sharepoint",
+    "siteName": "Atlas Program",
+    "path": "/sites/AtlasProgram/Marketing/Atlas-Messaging-Draft.docx",
+    "createdBy": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "createdDateTime": "2026-09-29T10:00:00Z",
+    "lastModifiedDateTime": "2026-09-30T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/AtlasProgram/Marketing/Atlas-Messaging-Draft.docx",
+    "summary": "Atlas messaging draft. Positioning: Atlas lets teams collaborate on shared data with enterprise controls, onboarding a tenant in under 10 minutes. Three value props: fast onboarding, built-in governan",
+    "text": "Atlas messaging draft. Positioning: Atlas lets teams collaborate on shared data with enterprise controls, onboarding a tenant in under 10 minutes. Three value props: fast onboarding, built-in governance, and open export.\n\nPress release outline: headline, customer quote from the private preview, availability on Dec 3, pricing tiers. Landing page visuals by Fatima Al-Hassan."
+  },
+  {
+    "driveId": "b!contoso-atlas",
+    "id": "01FILE007",
+    "name": "Atlas-Go-No-Go-Criteria.docx",
+    "fileType": "docx",
+    "size": 33393,
+    "location": "sharepoint",
+    "siteName": "Atlas Program",
+    "path": "/sites/AtlasProgram/Planning/Atlas-Go-No-Go-Criteria.docx",
+    "createdBy": {
+      "name": "Kenji Tanaka",
+      "address": "kenji@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "createdDateTime": "2026-10-29T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-30T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/AtlasProgram/Planning/Atlas-Go-No-Go-Criteria.docx",
+    "summary": "Atlas GA go/no-go criteria. Required: zero open P1 bugs; fewer than 10 open P2 bugs; p95 API latency under 400 ms in the load test; successful auth failover drill with recovery under 15 minutes; docum",
+    "text": "Atlas GA go/no-go criteria. Required: zero open P1 bugs; fewer than 10 open P2 bugs; p95 API latency under 400 ms in the load test; successful auth failover drill with recovery under 15 minutes; documented rollback plan.\n\nDecision forum: go/no-go meeting on Nov 26 chaired by Elena Rossi. Inputs: QA report (Kenji Tanaka), telemetry (Raj Mehta), customer readiness (Grace Lee)."
+  },
+  {
+    "driveId": "b!contoso-atlas",
+    "id": "01FILE008",
+    "name": "Atlas-Architecture-Overview.pptx",
+    "fileType": "pptx",
+    "size": 33438,
+    "location": "sharepoint",
+    "siteName": "Atlas Program",
+    "path": "/sites/AtlasProgram/Engineering/Atlas-Architecture-Overview.pptx",
+    "createdBy": {
+      "name": "David Okafor",
+      "address": "david@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "David Okafor",
+      "address": "david@contoso.com"
+    },
+    "createdDateTime": "2026-09-24T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-13T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/AtlasProgram/Engineering/Atlas-Architecture-Overview.pptx",
+    "summary": "Atlas architecture overview. Components: tenant onboarding service, collaboration API, export pipeline, and the shared authentication service. Data is partitioned per tenant with regional placement in",
+    "text": "Atlas architecture overview. Components: tenant onboarding service, collaboration API, export pipeline, and the shared authentication service. Data is partitioned per tenant with regional placement in the US and EU.\n\nThe export pipeline is the main scalability concern: large tenants generate multi-GB exports. The batching redesign by David Okafor reduces peak memory by about 60%."
+  },
+  {
+    "driveId": "b!contoso-atlas",
+    "id": "01FILE009",
+    "name": "Atlas-Private-Preview-Feedback.pdf",
+    "fileType": "pdf",
+    "size": 33411,
+    "location": "sharepoint",
+    "siteName": "Atlas Program",
+    "path": "/sites/AtlasProgram/Customer/Atlas-Private-Preview-Feedback.pdf",
+    "createdBy": {
+      "name": "Grace Lee",
+      "address": "grace@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Grace Lee",
+      "address": "grace@contoso.com"
+    },
+    "createdDateTime": "2026-10-21T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-22T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/AtlasProgram/Customer/Atlas-Private-Preview-Feedback.pdf",
+    "summary": "Atlas private preview feedback summary from 9 customers. Positives: onboarding flow, clean API, responsive support. Negatives: export is slow for large tenants, no SSO yet, limited audit log filters. ",
+    "text": "Atlas private preview feedback summary from 9 customers. Positives: onboarding flow, clean API, responsive support. Negatives: export is slow for large tenants, no SSO yet, limited audit log filters.\n\nCustomer Northwind asked about enterprise pricing and a dedicated region. Contoso Labs requested a webhook for export completion. Net promoter score among preview customers: +41."
+  },
+  {
+    "driveId": "b!contoso-atlas",
+    "id": "01FILE010",
+    "name": "Atlas-Launch-Event-Run-of-Show.pptx",
+    "fileType": "pptx",
+    "size": 32079,
+    "location": "sharepoint",
+    "siteName": "Atlas Program",
+    "path": "/sites/AtlasProgram/Marketing/Atlas-Launch-Event-Run-of-Show.pptx",
+    "createdBy": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "createdDateTime": "2026-11-03T10:00:00Z",
+    "lastModifiedDateTime": "2026-11-04T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/AtlasProgram/Marketing/Atlas-Launch-Event-Run-of-Show.pptx",
+    "summary": "Atlas customer launch event, Nov 19. Run of show: 09:00 welcome (Elena Rossi), 09:10 program journey (Akshay Dagar, 10 minutes), 09:25 architecture demo (David Okafor), 09:50 customer panel, 10:20 Q&A",
+    "text": "Atlas customer launch event, Nov 19. Run of show: 09:00 welcome (Elena Rossi), 09:10 program journey (Akshay Dagar, 10 minutes), 09:25 architecture demo (David Okafor), 09:50 customer panel, 10:20 Q&A. Slides due the Monday before."
+  },
+  {
+    "driveId": "b!contoso-atlas",
+    "id": "01FILE011",
+    "name": "Atlas-Pricing-Sheet.xlsx",
+    "fileType": "xlsx",
+    "size": 32169,
+    "location": "sharepoint",
+    "siteName": "Atlas Program",
+    "path": "/sites/AtlasProgram/Marketing/Atlas-Pricing-Sheet.xlsx",
+    "createdBy": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "createdDateTime": "2026-10-15T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-28T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/AtlasProgram/Marketing/Atlas-Pricing-Sheet.xlsx",
+    "summary": "Atlas pricing sheet. Tiers: Team ($29 per tenant seat per month), Business ($49), Enterprise (custom, dedicated region available). Margin analysis by Priya Sharma assumes cloud cost per tenant of $6.1",
+    "text": "Atlas pricing sheet. Tiers: Team ($29 per tenant seat per month), Business ($49), Enterprise (custom, dedicated region available). Margin analysis by Priya Sharma assumes cloud cost per tenant of $6.10 per month at the current export design."
+  },
+  {
+    "driveId": "b!contoso-eng",
+    "id": "01FILE012",
+    "name": "Auth-Outage-Postmortem-2026-10-14.docx",
+    "fileType": "docx",
+    "size": 102702,
+    "location": "sharepoint",
+    "siteName": "Engineering",
+    "path": "/sites/Engineering/Incidents/Auth-Outage-Postmortem-2026-10-14.docx",
+    "createdBy": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "createdDateTime": "2026-10-21T10:00:00Z",
+    "lastModifiedDateTime": "2026-11-02T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Engineering/Incidents/Auth-Outage-Postmortem-2026-10-14.docx",
+    "summary": "Postmortem: Authentication service outage, October 14, 2026. Severity 1. Duration 3 hours 35 minutes (05:12 to 08:47 UTC). Author: Sarah Chen. Reviewers: Akshay Dagar, Liam O'Connor, David Okafor, Ele",
+    "text": "Postmortem: Authentication service outage, October 14, 2026. Severity 1. Duration 3 hours 35 minutes (05:12 to 08:47 UTC). Author: Sarah Chen. Reviewers: Akshay Dagar, Liam O'Connor, David Okafor, Elena Rossi.\n\nSummary: The token signing certificate for the authentication service expired. The automatic rotation job had failed silently two weeks earlier, and the expiry alert was routed to a retired mailbox, so no one was paged until sign-in failures started. Approximately 18,000 sign-ins failed and 41 enterprise tenants were affected, including Atlas private preview tenants.\n\nRoot cause: certificate rotation job failure with no health check, combined with misconfigured alert routing. Contributing factors: the manual rotation runbook was outdated and the on-call engineer needed 35 minutes to find the right procedure.\n\nTimeline (UTC):\n- 05:12 UTC: Token signing certificate expires; sign-in failures begin.\n- 05:20 UTC: Automated monitoring pages the on-call engineer; Sev1 declared.\n- 05:25 UTC: Incident bridge opened, Sarah Chen assumes incident commander role.\n- 05:31 UTC: Liam O'Connor confirms the certificate rotation job failed silently.\n- 05:55 UTC: Manual rotation procedure located; runbook found to be outdated.\n- 06:10 UTC: Status page updated by Akshay Dagar; enterprise customer comms started.\n- 07:30 UTC: New certificate deployed in the primary region.\n- 08:20 UTC: Rollout to secondary regions complete; error rates falling.\n- 08:47 UTC: Service fully restored; incident resolved.\n\nWhat went well: fast detection once the Sev1 was declared, clear incident roles, and good cross-team collaboration. What went poorly: no proactive alert on certificate expiry, outdated runbook, slow customer communications in the first hour.\n\nAction items: (1) fix alert routing for certificate expiry (done); (2) build a certificate inventory (done); (3) update the manual rotation runbook (done); (4) add a rotation canary job (not started); (5) run a quarterly failover drill (scheduled Nov 18); (6) add synthetic sign-in monitoring (in progress); (7) define customer comms templates for Sev1 (in progress); (8) review service credit policy with Finance (in progress).\n\nCustomer impact and credits: service credits are estimated at $62,000 across affected enterprise tenants. Northwind requested a root cause summary; the executive summary can be shared after approval by Elena Rossi.\n\nAppendix A, detailed log analysis. Between 05:00 and 05:05 UTC the sign-in failure rate was 40 percent across regions, with token validation errors dominating the logs. Between 05:05 and 05:10 UTC the sign-in failure rate was 45 percent across regions, with token validation errors dominating the logs. Between 05:10 and 05:15 UTC the sign-in failure rate was 50 percent across regions, with token validation errors dominating the logs. Between 05:15 and 05:20 UTC the sign-in failure rate was 55 percent across regions, with token validation errors dominating the logs. Between 05:20 and 05:25 UTC the sign-in failure rate was 60 percent across regions, with token validation errors dominating the logs. Between 05:25 and 05:30 UTC the sign-in failure rate was 65 percent across regions, with token validation errors dominating the logs. Between 05:30 and 05:35 UTC the sign-in failure rate was 70 percent across regions, with token validation errors dominating the logs. Between 05:35 and 05:40 UTC the sign-in failure rate was 75 percent across regions, with token validation errors dominating the logs. Between 05:40 and 05:45 UTC the sign-in failure rate was 80 percent across regions, with token validation errors dominating the logs. Between 05:45 and 05:50 UTC the sign-in failure rate was 85 percent across regions, with token validation errors dominating the logs. Between 05:50 and 05:55 UTC the sign-in failure rate was 90 percent across regions, with token validation errors dominating the logs. Between 05:55 and 06:00 UTC the sign-in failure rate was 95 percent across regions, with token validation errors dominating the logs. Between 06:00 and 06:05 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:05 and 06:10 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:10 and 06:15 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:15 and 06:20 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:20 and 06:25 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:25 and 06:30 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:30 and 06:35 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:35 and 06:40 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:40 and 06:45 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:45 and 06:50 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:50 and 06:55 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 06:55 and 07:00 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:00 and 07:05 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:05 and 07:10 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:10 and 07:15 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:15 and 07:20 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:20 and 07:25 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:25 and 07:30 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:30 and 07:35 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:35 and 07:40 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:40 and 07:45 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:45 and 07:50 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:50 and 07:55 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 07:55 and 08:00 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 08:00 and 08:05 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 08:05 and 08:10 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 08:10 and 08:15 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs. Between 08:15 and 08:20 UTC the sign-in failure rate was 100 percent across regions, with token validation errors dominating the logs.\n\nAppendix B, lessons learned. Certificates are a class of silent time bombs: monitor expiry, test rotation continuously, and make sure alerts reach a staffed destination. Ownership of shared platform components must be re-validated when people leave teams."
+  },
+  {
+    "driveId": "b!contoso-eng",
+    "id": "01FILE013",
+    "name": "Auth-Outage-Timeline.xlsx",
+    "fileType": "xlsx",
+    "size": 32385,
+    "location": "sharepoint",
+    "siteName": "Engineering",
+    "path": "/sites/Engineering/Incidents/Auth-Outage-Timeline.xlsx",
+    "createdBy": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "createdDateTime": "2026-10-15T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-17T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Engineering/Incidents/Auth-Outage-Timeline.xlsx",
+    "summary": "Incident timeline spreadsheet for the Oct 14 auth outage. Columns: time (UTC), event, owner, evidence link. Key rows: 05:12 certificate expired, 05:20 Sev1 declared, 08:47 resolved. Incident commander",
+    "text": "Incident timeline spreadsheet for the Oct 14 auth outage. Columns: time (UTC), event, owner, evidence link. Key rows: 05:12 certificate expired, 05:20 Sev1 declared, 08:47 resolved. Incident commander Sarah Chen, status page Akshay Dagar, remediation Liam O'Connor."
+  },
+  {
+    "driveId": "b!contoso-eng",
+    "id": "01FILE014",
+    "name": "Incident-Response-Runbook.docx",
+    "fileType": "docx",
+    "size": 34167,
+    "location": "sharepoint",
+    "siteName": "Engineering",
+    "path": "/sites/Engineering/Runbooks/Incident-Response-Runbook.docx",
+    "createdBy": {
+      "name": "Liam O'Connor",
+      "address": "liam@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Liam O'Connor",
+      "address": "liam@contoso.com"
+    },
+    "createdDateTime": "2026-09-18T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-29T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Engineering/Runbooks/Incident-Response-Runbook.docx",
+    "summary": "Incident response runbook. Severity definitions: Sev1 is a full outage or data loss affecting many customers; page the on-call, open a bridge, assign an incident commander within 10 minutes. Sev2 is a",
+    "text": "Incident response runbook. Severity definitions: Sev1 is a full outage or data loss affecting many customers; page the on-call, open a bridge, assign an incident commander within 10 minutes. Sev2 is a major degradation; Sev3 is a minor issue.\n\nRoles: incident commander, communications lead, operations lead, scribe. Status page updates every 30 minutes during Sev1. Updated after the Oct 14 outage with a certificate rotation procedure and the new alert routing."
+  },
+  {
+    "driveId": "b!contoso-eng",
+    "id": "01FILE015",
+    "name": "Postmortem-Action-Items.xlsx",
+    "fileType": "xlsx",
+    "size": 33150,
+    "location": "sharepoint",
+    "siteName": "Engineering",
+    "path": "/sites/Engineering/Incidents/Postmortem-Action-Items.xlsx",
+    "createdBy": {
+      "name": "Liam O'Connor",
+      "address": "liam@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Liam O'Connor",
+      "address": "liam@contoso.com"
+    },
+    "createdDateTime": "2026-10-23T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-27T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Engineering/Incidents/Postmortem-Action-Items.xlsx",
+    "summary": "Postmortem action items tracker for the Oct 14 auth outage. 8 items: alert routing fix (done), certificate inventory (done), runbook update (done), synthetic sign-in monitoring (in progress), comms te",
+    "text": "Postmortem action items tracker for the Oct 14 auth outage. 8 items: alert routing fix (done), certificate inventory (done), runbook update (done), synthetic sign-in monitoring (in progress), comms templates (in progress), service credit review (in progress), failover drill (in progress, Nov 18), rotation canary (not started). Owner: Liam O'Connor."
+  },
+  {
+    "driveId": "b!contoso-eng",
+    "id": "01FILE016",
+    "name": "Failover-Drill-Plan.docx",
+    "fileType": "docx",
+    "size": 32340,
+    "location": "sharepoint",
+    "siteName": "Engineering",
+    "path": "/sites/Engineering/Incidents/Failover-Drill-Plan.docx",
+    "createdBy": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Sarah Chen",
+      "address": "sarah.chen@contoso.com"
+    },
+    "createdDateTime": "2026-11-04T10:00:00Z",
+    "lastModifiedDateTime": "2026-11-09T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Engineering/Incidents/Failover-Drill-Plan.docx",
+    "summary": "Auth failover drill plan, Nov 18 at 10:00 UTC. Goal: fail over the primary region and recover within the 15-minute target. Roles: Sarah Chen (drill lead), Liam O'Connor (platform), Akshay Dagar (obser",
+    "text": "Auth failover drill plan, Nov 18 at 10:00 UTC. Goal: fail over the primary region and recover within the 15-minute target. Roles: Sarah Chen (drill lead), Liam O'Connor (platform), Akshay Dagar (observer, debrief). The result feeds the Atlas go/no-go decision."
+  },
+  {
+    "driveId": "b!contoso-people",
+    "id": "01FILE017",
+    "name": "Backend-Engineer-JD.docx",
+    "fileType": "docx",
+    "size": 33735,
+    "location": "sharepoint",
+    "siteName": "People Team",
+    "path": "/sites/PeopleTeam/Recruiting/Backend-Engineer-JD.docx",
+    "createdBy": {
+      "name": "Priya Nair",
+      "address": "priya.nair@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Nina Patel",
+      "address": "nina@contoso.com"
+    },
+    "createdDateTime": "2026-09-26T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-03T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/PeopleTeam/Recruiting/Backend-Engineer-JD.docx",
+    "summary": "Senior Backend Engineer, Atlas. Contoso is hiring three Senior Backend Engineers to build the Atlas collaboration API and export pipeline. Requirements: 6+ years building distributed services, strong ",
+    "text": "Senior Backend Engineer, Atlas. Contoso is hiring three Senior Backend Engineers to build the Atlas collaboration API and export pipeline. Requirements: 6+ years building distributed services, strong .NET or Go skills, experience with multi-tenant systems.\n\nHiring manager: Akshay Dagar. Recruiter: Priya Nair. Interview loop: system design (David Okafor), collaboration (Liam O'Connor), program fit (Akshay Dagar)."
+  },
+  {
+    "driveId": "b!contoso-people",
+    "id": "01FILE018",
+    "name": "Interview-Scorecard-Template.docx",
+    "fileType": "docx",
+    "size": 32421,
+    "location": "sharepoint",
+    "siteName": "People Team",
+    "path": "/sites/PeopleTeam/Recruiting/Interview-Scorecard-Template.docx",
+    "createdBy": {
+      "name": "Nina Patel",
+      "address": "nina@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Nina Patel",
+      "address": "nina@contoso.com"
+    },
+    "createdDateTime": "2026-09-23T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-08T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/PeopleTeam/Recruiting/Interview-Scorecard-Template.docx",
+    "summary": "Interview scorecard template. Rate each competency from 1 to 4: technical depth, problem solving, collaboration, ownership. Provide written evidence for each rating and a hire / no hire recommendation",
+    "text": "Interview scorecard template. Rate each competency from 1 to 4: technical depth, problem solving, collaboration, ownership. Provide written evidence for each rating and a hire / no hire recommendation within 24 hours of the interview. Contact Nina Patel with questions."
+  },
+  {
+    "driveId": "b!contoso-people",
+    "id": "01FILE019",
+    "name": "Hiring-Plan-FY27.xlsx",
+    "fileType": "xlsx",
+    "size": 32358,
+    "location": "sharepoint",
+    "siteName": "People Team",
+    "path": "/sites/PeopleTeam/Planning/Hiring-Plan-FY27.xlsx",
+    "createdBy": {
+      "name": "Nina Patel",
+      "address": "nina@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Nina Patel",
+      "address": "nina@contoso.com"
+    },
+    "createdDateTime": "2026-09-24T10:00:00Z",
+    "lastModifiedDateTime": "2026-09-25T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/PeopleTeam/Planning/Hiring-Plan-FY27.xlsx",
+    "summary": "FY27 hiring plan. Engineering: 3 Senior Backend Engineers, 2 Site Reliability Engineers, 1 QA Engineer. Target start dates: backend roles in December, SRE in January. Budget impact is reflected in the",
+    "text": "FY27 hiring plan. Engineering: 3 Senior Backend Engineers, 2 Site Reliability Engineers, 1 QA Engineer. Target start dates: backend roles in December, SRE in January. Budget impact is reflected in the Q3 budget plan with phased starts. Sourcing lead: Priya Nair."
+  },
+  {
+    "driveId": "b!contoso-people",
+    "id": "01FILE020",
+    "name": "Candidate-Shortlist-Backend.pdf",
+    "fileType": "pdf",
+    "size": 32574,
+    "location": "sharepoint",
+    "siteName": "People Team",
+    "path": "/sites/PeopleTeam/Recruiting/Candidate-Shortlist-Backend.pdf",
+    "createdBy": {
+      "name": "Priya Nair",
+      "address": "priya.nair@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Priya Nair",
+      "address": "priya.nair@contoso.com"
+    },
+    "createdDateTime": "2026-10-02T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-17T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/PeopleTeam/Recruiting/Candidate-Shortlist-Backend.pdf",
+    "summary": "Shortlist for Senior Backend Engineer. Candidates C-1042, C-1047, C-1051, C-1055, C-1060. Strengths summary: C-1042 deep distributed systems experience and prior export pipeline work; C-1047 strong .N",
+    "text": "Shortlist for Senior Backend Engineer. Candidates C-1042, C-1047, C-1051, C-1055, C-1060. Strengths summary: C-1042 deep distributed systems experience and prior export pipeline work; C-1047 strong .NET and performance tuning; others pending screening. Interview loops on Oct 20 and 21."
+  },
+  {
+    "driveId": "b!akshay-onedrive",
+    "id": "01FILE021",
+    "name": "Weekly-Status-Notes.docx",
+    "fileType": "docx",
+    "size": 32835,
+    "location": "onedrive",
+    "siteName": null,
+    "path": "/personal/akshay_contoso_com/Documents/Weekly-Status-Notes.docx",
+    "createdBy": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "createdDateTime": "2026-10-03T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-31T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/personal/akshay_contoso_com/Documents/Weekly-Status-Notes.docx",
+    "summary": "My weekly status notes. Atlas: GA Dec 3 at risk from export API; keep customer comms flexible. Budget: waiting on Priya Sharma's final workbook; sign-off due Friday. Hiring: offer for C-1042 accepted,",
+    "text": "My weekly status notes. Atlas: GA Dec 3 at risk from export API; keep customer comms flexible. Budget: waiting on Priya Sharma's final workbook; sign-off due Friday. Hiring: offer for C-1042 accepted, SRE JD needs on-call expectations. Postmortem: exec summary needs customer impact wording and service credit cost."
+  },
+  {
+    "driveId": "b!akshay-onedrive",
+    "id": "01FILE022",
+    "name": "1on1-Notes-Liam.docx",
+    "fileType": "docx",
+    "size": 32259,
+    "location": "onedrive",
+    "siteName": null,
+    "path": "/personal/akshay_contoso_com/Documents/1on1-Notes-Liam.docx",
+    "createdBy": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "createdDateTime": "2026-10-19T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-26T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/personal/akshay_contoso_com/Documents/1on1-Notes-Liam.docx",
+    "summary": "1:1 notes with Liam O'Connor. Topics: postmortem action items status, platform capacity for Atlas load testing, growth plan toward staff manager. Follow-ups: Liam to explain the cloud overage to Finan",
+    "text": "1:1 notes with Liam O'Connor. Topics: postmortem action items status, platform capacity for Atlas load testing, growth plan toward staff manager. Follow-ups: Liam to explain the cloud overage to Finance; Akshay to introduce Liam to the SRE candidates."
+  },
+  {
+    "driveId": "b!akshay-onedrive",
+    "id": "01FILE023",
+    "name": "Atlas-Retro-Outline-Draft.docx",
+    "fileType": "docx",
+    "size": 32520,
+    "location": "onedrive",
+    "siteName": null,
+    "path": "/personal/akshay_contoso_com/Documents/Atlas-Retro-Outline-Draft.docx",
+    "createdBy": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "createdDateTime": "2026-11-10T10:00:00Z",
+    "lastModifiedDateTime": "2026-11-10T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/personal/akshay_contoso_com/Documents/Atlas-Retro-Outline-Draft.docx",
+    "summary": "Atlas retrospective outline (draft). What went well: private preview feedback loop, design polish, cross-team cadence. What did not: export API estimates, late SSO discovery, QA environment contention",
+    "text": "Atlas retrospective outline (draft). What went well: private preview feedback loop, design polish, cross-team cadence. What did not: export API estimates, late SSO discovery, QA environment contention. Process changes: earlier load testing, explicit risk review at each milestone."
+  },
+  {
+    "driveId": "b!contoso-legal",
+    "id": "01FILE024",
+    "name": "Vendor-Cloud-Commitment-Contract.pdf",
+    "fileType": "pdf",
+    "size": 32799,
+    "location": "sharepoint",
+    "siteName": "Legal",
+    "path": "/sites/Legal/Contracts/Vendor-Cloud-Commitment-Contract.pdf",
+    "createdBy": {
+      "name": "Tom Becker",
+      "address": "tom@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Tom Becker",
+      "address": "tom@contoso.com"
+    },
+    "createdDateTime": "2026-10-06T10:00:00Z",
+    "lastModifiedDateTime": "2026-10-07T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Legal/Contracts/Vendor-Cloud-Commitment-Contract.pdf",
+    "summary": "Cloud provider commitment agreement. Term: 3 years. Annual commitment $1.73M, total $5.2M. Shortfall penalty 10% of unmet commitment. Auto-renews for one year unless notice is given 90 days before exp",
+    "text": "Cloud provider commitment agreement. Term: 3 years. Annual commitment $1.73M, total $5.2M. Shortfall penalty 10% of unmet commitment. Auto-renews for one year unless notice is given 90 days before expiry. Tom Becker recommends negotiating the notice period to 30 days and adding a cap on annual price increases."
+  },
+  {
+    "driveId": "b!contoso-eng",
+    "id": "01FILE025",
+    "name": "Engineering-All-Hands-Nov.pptx",
+    "fileType": "pptx",
+    "size": 31764,
+    "location": "sharepoint",
+    "siteName": "Engineering",
+    "path": "/sites/Engineering/Events/Engineering-All-Hands-Nov.pptx",
+    "createdBy": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "createdDateTime": "2026-10-30T10:00:00Z",
+    "lastModifiedDateTime": "2026-11-07T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/Engineering/Events/Engineering-All-Hands-Nov.pptx",
+    "summary": "Engineering all-hands, Nov 20. Agenda: company update (Elena Rossi), Atlas program status (Akshay Dagar), lessons learned from the Oct 14 auth outage (Sarah Chen), hiring update (Priya Nair), Q&A.",
+    "text": "Engineering all-hands, Nov 20. Agenda: company update (Elena Rossi), Atlas program status (Akshay Dagar), lessons learned from the Oct 14 auth outage (Sarah Chen), hiring update (Priya Nair), Q&A."
+  },
+  {
+    "driveId": "b!contoso-atlas",
+    "id": "01FILE026",
+    "name": "Atlas-Telemetry-Dashboard-Spec.docx",
+    "fileType": "docx",
+    "size": 32493,
+    "location": "sharepoint",
+    "siteName": "Atlas Program",
+    "path": "/sites/AtlasProgram/Engineering/Atlas-Telemetry-Dashboard-Spec.docx",
+    "createdBy": {
+      "name": "Raj Mehta",
+      "address": "raj@contoso.com"
+    },
+    "lastModifiedBy": {
+      "name": "Raj Mehta",
+      "address": "raj@contoso.com"
+    },
+    "createdDateTime": "2026-10-31T10:00:00Z",
+    "lastModifiedDateTime": "2026-11-05T15:30:00Z",
+    "webUrl": "https://contoso.sharepoint.com/sites/AtlasProgram/Engineering/Atlas-Telemetry-Dashboard-Spec.docx",
+    "summary": "Atlas usage telemetry dashboard specification. Metrics: tenant activations, daily active tenants, API latency p50 and p95, export job duration and failure rate. Data source: event pipeline into the an",
+    "text": "Atlas usage telemetry dashboard specification. Metrics: tenant activations, daily active tenants, API latency p50 and p95, export job duration and failure rate. Data source: event pipeline into the analytics lake. Owner: Raj Mehta. Needed for the go/no-go and the launch event."
+  }
+]

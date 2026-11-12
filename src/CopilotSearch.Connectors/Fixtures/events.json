@@ -1,0 +1,272 @@
+[
+  {
+    "id": "AAEv-001",
+    "subject": "Atlas program kickoff",
+    "bodyPreview": "Kickoff for Project Atlas: milestones, owners and risks.",
+    "organizer": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      },
+      {
+        "name": "David Okafor",
+        "address": "david@contoso.com"
+      },
+      {
+        "name": "Marcus Johnson",
+        "address": "marcus@contoso.com"
+      },
+      {
+        "name": "Fatima Al-Hassan",
+        "address": "fatima@contoso.com"
+      }
+    ],
+    "start": "2026-09-25T10:00:00Z",
+    "end": "2026-09-25T10:30:00Z",
+    "isOnlineMeeting": true,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-001"
+  },
+  {
+    "id": "AAEv-002",
+    "subject": "Q3 budget review",
+    "bodyPreview": "Review of the Q3 budget: engineering headcount, cloud spend and Atlas launch investment.",
+    "organizer": {
+      "name": "Olivia Martin",
+      "address": "olivia@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      },
+      {
+        "name": "Elena Rossi",
+        "address": "elena@contoso.com"
+      },
+      {
+        "name": "Priya Sharma",
+        "address": "priya.sharma@contoso.com"
+      }
+    ],
+    "start": "2026-10-23T15:00:00Z",
+    "end": "2026-10-23T16:30:00Z",
+    "isOnlineMeeting": true,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-002"
+  },
+  {
+    "id": "AAEv-003",
+    "subject": "Atlas weekly sync",
+    "bodyPreview": "Weekly Atlas status: bugs, comms, customer feedback.",
+    "organizer": {
+      "name": "Akshay Dagar",
+      "address": "akshay@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "David Okafor",
+        "address": "david@contoso.com"
+      },
+      {
+        "name": "Marcus Johnson",
+        "address": "marcus@contoso.com"
+      },
+      {
+        "name": "Kenji Tanaka",
+        "address": "kenji@contoso.com"
+      },
+      {
+        "name": "Grace Lee",
+        "address": "grace@contoso.com"
+      }
+    ],
+    "start": "2026-10-25T09:00:00Z",
+    "end": "2026-10-25T09:30:00Z",
+    "isOnlineMeeting": true,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-003"
+  },
+  {
+    "id": "AAEv-004",
+    "subject": "Backend Engineer interview loop (C-1042)",
+    "bodyPreview": "Interview loop for Senior Backend Engineer candidates.",
+    "organizer": {
+      "name": "Priya Nair",
+      "address": "priya.nair@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      },
+      {
+        "name": "David Okafor",
+        "address": "david@contoso.com"
+      },
+      {
+        "name": "Liam O'Connor",
+        "address": "liam@contoso.com"
+      }
+    ],
+    "start": "2026-10-20T13:00:00Z",
+    "end": "2026-10-20T17:00:00Z",
+    "isOnlineMeeting": true,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-004"
+  },
+  {
+    "id": "AAEv-005",
+    "subject": "1:1 Akshay / Liam",
+    "bodyPreview": "Postmortem actions, Atlas capacity, growth plan.",
+    "organizer": {
+      "name": "Liam O'Connor",
+      "address": "liam@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      }
+    ],
+    "start": "2026-10-19T11:00:00Z",
+    "end": "2026-10-19T11:30:00Z",
+    "isOnlineMeeting": false,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-005"
+  },
+  {
+    "id": "AAEv-006",
+    "subject": "Auth outage postmortem review",
+    "bodyPreview": "Review the Oct 14 auth outage postmortem and action items.",
+    "organizer": {
+      "name": "Elena Rossi",
+      "address": "elena@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      },
+      {
+        "name": "Sarah Chen",
+        "address": "sarah.chen@contoso.com"
+      },
+      {
+        "name": "Liam O'Connor",
+        "address": "liam@contoso.com"
+      },
+      {
+        "name": "David Okafor",
+        "address": "david@contoso.com"
+      }
+    ],
+    "start": "2026-10-28T14:00:00Z",
+    "end": "2026-10-28T15:00:00Z",
+    "isOnlineMeeting": true,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-006"
+  },
+  {
+    "id": "AAEv-007",
+    "subject": "Atlas beta readiness review",
+    "bodyPreview": "Beta readiness: P1 bug status, load test results.",
+    "organizer": {
+      "name": "Kenji Tanaka",
+      "address": "kenji@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      },
+      {
+        "name": "David Okafor",
+        "address": "david@contoso.com"
+      },
+      {
+        "name": "Elena Rossi",
+        "address": "elena@contoso.com"
+      },
+      {
+        "name": "Marcus Johnson",
+        "address": "marcus@contoso.com"
+      }
+    ],
+    "start": "2026-11-05T10:30:00Z",
+    "end": "2026-11-05T11:00:00Z",
+    "isOnlineMeeting": true,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-007"
+  },
+  {
+    "id": "AAEv-008",
+    "subject": "Atlas launch event planning",
+    "bodyPreview": "Plan the Nov 19 launch event: run of show and speaker slides.",
+    "organizer": {
+      "name": "Marcus Johnson",
+      "address": "marcus@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      },
+      {
+        "name": "Fatima Al-Hassan",
+        "address": "fatima@contoso.com"
+      },
+      {
+        "name": "Grace Lee",
+        "address": "grace@contoso.com"
+      }
+    ],
+    "start": "2026-11-06T16:00:00Z",
+    "end": "2026-11-06T16:45:00Z",
+    "isOnlineMeeting": true,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-008"
+  },
+  {
+    "id": "AAEv-009",
+    "subject": "Hiring sync: SRE and Backend",
+    "bodyPreview": "Review pipeline for SRE and backend roles, JD feedback.",
+    "organizer": {
+      "name": "Nina Patel",
+      "address": "nina@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      },
+      {
+        "name": "Priya Nair",
+        "address": "priya.nair@contoso.com"
+      }
+    ],
+    "start": "2026-11-10T09:30:00Z",
+    "end": "2026-11-10T10:00:00Z",
+    "isOnlineMeeting": true,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-009"
+  },
+  {
+    "id": "AAEv-010",
+    "subject": "Q3 budget sign-off prep",
+    "bodyPreview": "Prepare engineering sign-off for the final Q3 budget.",
+    "organizer": {
+      "name": "Priya Sharma",
+      "address": "priya.sharma@contoso.com"
+    },
+    "attendees": [
+      {
+        "name": "Akshay Dagar",
+        "address": "akshay@contoso.com"
+      },
+      {
+        "name": "Olivia Martin",
+        "address": "olivia@contoso.com"
+      }
+    ],
+    "start": "2026-11-11T11:00:00Z",
+    "end": "2026-11-11T11:30:00Z",
+    "isOnlineMeeting": true,
+    "webLink": "https://outlook.contoso.com/calendar/item/AAEv-010"
+  }
+]
